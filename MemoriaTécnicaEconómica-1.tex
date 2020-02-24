@@ -71,7 +71,6 @@ Se adjunta también el presupuesto total de la inversión para el proyecto \text
 
 \subsection{Análisis de requisitos preliminar}
 Se exponen los siguientes requisitos funcionales de la aplicación:
-\break
 \begin{table}[H]
 	\begin{tabular}{p{4cm} p{10cm}}
 		\hline
@@ -87,49 +86,57 @@ Se exponen los siguientes requisitos funcionales de la aplicación:
 		& El usuario accede al sistema mediante una aplicación móvil o una aplicación web. \\ 
 		\hline
 		RF3
-		& El sistema permite reproducir y pausar una canción. También permite saltar a la siguiente (si la hubiera), retroceder a la anterior, y elegir un bucle de la misma o reproducir aleatoriamente varias canciones. \\ 
+		& El artista accede al sistema mediante una aplicación web. \\ 
 		\hline
 		RF4
-		& El sistema permite al usuario registrado subir o bajar el volumen de la canción/podcast en reproducción. \\ 
+		& El sistema permite reproducir y pausar una canción. También permite saltar a la siguiente (si la hubiera), retroceder a la anterior, y elegir un bucle de la misma o reproducir aleatoriamente varias canciones. \\ 
 		\hline
 		RF5
-		& El usuario puede registrarse en el sistema para acceder a sus funcionalidades. \\ 
+		& El sistema permite al usuario registrado subir o bajar el volumen de la canción/podcast en reproducción. \\ 
 		\hline
 		RF6
-		& El usuario accede al sistema mediante un nombre identificatorio y una contraseña. \\ 
+		& El usuario debe registrarse en el sistema o iniciar sesión para acceder a sus funcionalidades. \\ 
 		\hline
 		RF7
-		& El usuario registrado puede buscar canciones, álbumes, artistas y podcasts. \\ 
+		& El usuario y el artista acceden al sistema mediante un nombre identificatorio y una contraseña. \\ 
 		\hline
 		RF8
-		& El usuario registrado puede crear playlists (agrupación de una o varias canciones) . \\ 
+		& El usuario registrado puede buscar canciones, álbumes, artistas y podcasts. \\ 
 		\hline
 		RF9
-		& El usuario registrado puede añadir/eliminar de sus favoritos una canción, playlist, álbum o podcast . \\ 
+		& El usuario registrado puede crear playlists (agrupación de una o varias canciones) . \\ 
 		\hline
 		RF10
+		& El usuario registrado puede añadir/eliminar de sus favoritos una canción, playlist, álbum o podcast . \\ 
+		\hline
+		RF11
 		& El usuario registrado puede ordenar por fecha de lanzamiento, nombre y por artista las canciones añadidas a una playlist. \\ 
 		\hline
-		RF11 
+		RF12
 		&  El usuario registrado puede seguir a otros usuarios dentro del sistema.\\
 		\hline
-		RF12 
+		RF13
 		&  El usuario registrado puede filtrar la búsqueda de una determinada canción por género y época.\\
 		\hline
-		RF13
-		&  El sistema permite sincronizar varios dispositivos, de tal manera que si reproduces la misma canción con el mismo usuario registrado en distintos dispositivos, solo puedas hacerlo en uno de ellos.\\
-		\hline
 		RF14
-		&  El sistema permitirá \textit{lanzar} una canción, es decir, estará disponible a partir de una hora y fecha determinada para ser escuchada.\\
+		&  El sistema permite sincronizar varios dispositivos, de tal manera que si reproduces la misma canción con el mismo usuario registrado en distintos dispositivos, solo puedas hacerlo en uno de ellos.\\
 		\hline
 		RF15
 		&  El sistema permitirá tener \textit{banner} de anuncios en la aplicación web.\\
 		\hline
+		RF16
+		& El sistema permite al usuario registrado manejar un equalizador del sonido. \\ 
+		\hline
+		RF17
+		& El artista tiene todas las funcionalidades del usuario registrado, además de poder subir canciones y podcast. \\ 
+		\hline
+		RF18
+		& El artista puede elegir la fecha y hora de una publicación, o subirla inmediatamente. \\ 
+		\hline
 	\end{tabular}
 \end{table}
-
-Se exponen los siguientes requisitos no funcionales de la aplicación:
 \break
+Se exponen los siguientes requisitos no funcionales de la aplicación:
 
 \begin{table}[H]
 	\begin{tabular}{p{4cm} p{10cm}}
@@ -144,6 +151,9 @@ Se exponen los siguientes requisitos no funcionales de la aplicación:
 		RNF2
 		&  La seguridad será fundamental a la hora de garantizar la confidencialidad y autentificación de las canciones, así como para cumplir determinados aspectos de la LOPD y los derechos de los cantautores.\\ 
 		\hline
+		RNF3
+		&  El cliente tendrá el desarrollo móvil en formato Android e iOS.\\ 
+		\hline
 	\end{tabular}
 \end{table}
 \newpage
@@ -154,12 +164,21 @@ Se exponen los siguientes requisitos no funcionales de la aplicación:
 El usuario solamente necesitará de un navegador web para conseguir conectarse al proyecto \textit{UPBEAT}.
 Este proyecto será compatible con el navegador \textit{Google Chrome}.\vspace{0.5cm}
 \hfill\break
-\includegraphics[scale=0.38]{navegadorWeb.png}
+\begin{figure}[H]
+	\centering{
+\includegraphics[scale=0.38]{navegadorWeb.png}}
+\end{figure}
 
 \subsection{Aspectos técnicos para el cliente}
-El proyecto será entregado en un servidor web de hosting, el cual implementará todos los servicios necesarios para que funcione correctamente.
-Se le proporcionará un usuario y contraseña para acceder al mismo y hacerse cargo una vez se desarrolle y entregue el proyecto.
+El proyecto será entregado en un servidor web de hosting, el cual implementará todos los servicios necesarios para que funcione correctamente. Se le proporcionará un usuario y contraseña para acceder al mismo y hacerse cargo una vez se desarrolle y entregue el proyecto.
+\hfill \break
+También se le proporcionará al cliente los archivos de ambas aplicaciones desarrolladas para la tecnología móvil.
+\begin{figure}[H]
+	\centering{
+		\includegraphics[scale=0.35]{android-apple.png}}
+\end{figure}
 
+\newpage
 \subsection{Descripción técnica preliminar}
 Para la realización del proyecto, el sistema usará la siguiente estructura: \vspace{0.15cm}
 
@@ -199,6 +218,9 @@ El desarrollo del cliente web se centrará en \textit{Angular} principalmente, e
 \newpage
 
 \section{Equipo técnico encargado del proyecto}
+La empresa \textit{BECARIOS SL}, dedicada al desarrollo de proyectos de software por demanda, está compuesta por 7 estudiantes de la titulación de Ingeniería Informática en la Universidad de Zaragoza, los cuales cursan las ramas de sistemas de la información y administración de sistemas.
+\hfill \break
+Previamente, se han desarrollado proyectos relacionados con 
 
 \newpage
 
