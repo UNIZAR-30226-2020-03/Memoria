@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.11.21)  24 FEB 2020 12:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.11.21)  24 FEB 2020 12:10
 entering extended mode
 **./MemoriaTécnicaEconómica-1.tex
 (MemoriaTécnicaEconómica-1.tex
@@ -343,49 +343,49 @@ Package pdftex.def Info: logoDefinitivo3.png  used on input line 218.
  [8]
 File: logoEina.png Graphic file (type png)
 <use logoEina.png>
-Package pdftex.def Info: logoEina.png  used on input line 225.
+Package pdftex.def Info: logoEina.png  used on input line 231.
 (pdftex.def)             Requested size: 113.81102pt x 32.43407pt.
 File: logoDefinitivo3.png Graphic file (type png)
 <use logoDefinitivo3.png>
-Package pdftex.def Info: logoDefinitivo3.png  used on input line 225.
+Package pdftex.def Info: logoDefinitivo3.png  used on input line 231.
 (pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
  [9]
 <PropuestaTabla.png, id=51, 536.60475pt x 211.992pt>
 File: PropuestaTabla.png Graphic file (type png)
 <use PropuestaTabla.png>
-Package pdftex.def Info: PropuestaTabla.png  used on input line 231.
+Package pdftex.def Info: PropuestaTabla.png  used on input line 237.
 (pdftex.def)             Requested size: 348.78894pt x 137.79315pt.
 
-Overfull \hbox (3.78894pt too wide) in paragraph at lines 231--232
+Overfull \hbox (3.78894pt too wide) in paragraph at lines 237--238
  [][] 
  []
 
 File: logoEina.png Graphic file (type png)
 <use logoEina.png>
-Package pdftex.def Info: logoEina.png  used on input line 235.
+Package pdftex.def Info: logoEina.png  used on input line 241.
 (pdftex.def)             Requested size: 113.81102pt x 32.43407pt.
 File: logoDefinitivo3.png Graphic file (type png)
 <use logoDefinitivo3.png>
-Package pdftex.def Info: logoDefinitivo3.png  used on input line 235.
+Package pdftex.def Info: logoDefinitivo3.png  used on input line 241.
 (pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
 [10 <./PropuestaTabla.png>]
 <EstimacionCoste.png, id=57, 763.653pt x 414.95026pt>
 File: EstimacionCoste.png Graphic file (type png)
 <use EstimacionCoste.png>
-Package pdftex.def Info: EstimacionCoste.png  used on input line 239.
+Package pdftex.def Info: EstimacionCoste.png  used on input line 245.
 (pdftex.def)             Requested size: 534.55345pt x 290.4632pt.
 
-Overfull \hbox (92.19102pt too wide) in paragraph at lines 238--240
+Overfull \hbox (92.19102pt too wide) in paragraph at lines 244--246
  []|  [] 
  []
 
 File: logoEina.png Graphic file (type png)
 <use logoEina.png>
-Package pdftex.def Info: logoEina.png  used on input line 242.
+Package pdftex.def Info: logoEina.png  used on input line 248.
 (pdftex.def)             Requested size: 113.81102pt x 32.43407pt.
 File: logoDefinitivo3.png Graphic file (type png)
 <use logoDefinitivo3.png>
-Package pdftex.def Info: logoDefinitivo3.png  used on input line 242.
+Package pdftex.def Info: logoDefinitivo3.png  used on input line 248.
 (pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
 [11 <./EstimacionCoste.png>] (MemoriaTécnicaEconómica-1.aux
 LaTeX Info: Redefining \. on input line 7.
@@ -407,7 +407,7 @@ nts/type1/public/amsfonts/cm/cmr17.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmti10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmti7.pfb>
-Output written on MemoriaTécnicaEconómica-1.pdf (11 pages, 490988 bytes).
+Output written on MemoriaTécnicaEconómica-1.pdf (11 pages, 491533 bytes).
 PDF statistics:
  88 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
