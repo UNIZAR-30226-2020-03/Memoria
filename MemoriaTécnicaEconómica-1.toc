@@ -1,0 +1,11 @@
+\babel@toc {spanish}{}
+\hfill \textbf {Página} \par 
+\contentsline {section}{\numberline {1}Objetivos del sistema}{4}%
+\contentsline {subsection}{\numberline {1.1}Análisis de requisitos preliminar}{4}%
+\contentsline {section}{\numberline {2}Descripción técnica}{6}%
+\contentsline {subsection}{\numberline {2.1}Aspectos técnicos para el usuario}{6}%
+\contentsline {subsection}{\numberline {2.2}Aspectos técnicos para el cliente}{6}%
+\contentsline {subsection}{\numberline {2.3}Descripción técnica preliminar}{6}%
+\contentsline {section}{\numberline {3}Plan de trabajo}{8}%
+\contentsline {section}{\numberline {4}Equipo técnico encargado del proyecto}{9}%
+\contentsline {section}{\numberline {5}Presupuesto}{10}%
