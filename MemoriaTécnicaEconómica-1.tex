@@ -48,16 +48,19 @@ Sergio Torres Castillo \vspace{0.25cm}
 \maketitle
 \newpage
 \section*{Resumen ejecutivo}
-En este documento se detalla la propuesta técnica y económica del proyecto \textit{UPBEAT}.
+En este documento se detalla la propuesta técnica y económica del proyecto UPBEAT.\\  \hfill \break
+Este proyecto tiene como objetivo la creación de un servicio de streaming de música, con las funcionalidades básicas de un reproductor, para canciones y podcasts, con opciones para modificar el sonido, aspectos de red social que permiten añadir amigos y el uso de banners para poder patrocinar productos. \\
+Además existirá un perfil de artista con más funcionalidades que el resto de usuarios, que permitirán gestionar las canciones creadas y/o producidas por los mismos.\\
 
-El proyecto tiene como objetivo crear un servicio de streaming de música y un cliente web que lo utilice, además de una aplicación móvil. El servidor contará con una \textit{API REST} para intercambiar datos entre el servidor y los clientes, permitiendo a estos realizar las operaciones cotidianas de una aplicación streaming de música.
-\hfill\break
-La descripción técnica especifica que se desarrollará el sistema sobre una capa de aplicación web basada en Angular, cumplimentado con ello una app móvil para el uso del sistema.
-Esto permitirá usar servicios \textit{REST}, con \textit{Spring} como herramienta de desarrollo. Para la base de datos, se usará una PostgreeSQL. 
-\hfill\break
-Para todo ello, el plan de trabajo que se ha cumplimentado y acordado ha sido establecido por el cliente, reunidos periódicamente en las reuniones con el tutor del proyecto. 
-\hfill\break
-Se adjunta también el presupuesto total de la inversión para el proyecto \textit{UPBEAT}, con el desglose del mismo.
+Esta aplicación podrá ser accedida o bien mediante un cliente web o bien desde una aplicación móvil, disponible tanto para IOS como para Android. El servidor contará con una API REST para intercambiar datos entre el servidor y los clientes.\\
+
+En cuanto a la descripción técnica del proyecto, se especifica que el sistema se desarrollará sobre una capa de aplicación web basada en Angular, cumplimentado con una app móvil la cual será creada utilizando Flutter, aplicación usada para el desarrollo de interfaces de usuario para aplicaciones móviles que permite la compilación para ambos sistemas operativos.\\
+Esto permitirá usar servicios REST, con Spring como herramienta de desarrollo, aplicación que ya ha sido utilizada por uno de los miembros de este proyecto. Para la base de datos, se ha decidido utilizar PostgreSQL como la mejor alternativa tras comparar diferentes opciones y reunirse con el profesor asignado. \\ 
+
+Para todo ello, el plan de trabajo que se ha cumplimentado y acordado ha sido establecido por el cliente, contando éste con dos iteraciones en las cuales se deberán ir mostrando los avances logrados y los requisitos que se han satisfecho hasta la fecha.
+El equipo técnico está formado por siete estudiantes de la Universidad de Zaragoza, los cuales han sido formados y siguen formándose sobre conocimientos de programación, bases de datos, sistemas de la información y administración de sistemas entre otras competencias adquiridas, con experiencia en diversos proyectos llevados a cabo a lo largo de las diferentes asignaturas que permitirán superar las diversas fases del proyecto a pesar de la escasa experiencia laboral.\\
+
+Por último, se adjunta también el presupuesto total de la inversión para el proyecto UPBEAT, con el desglose del mismo y los diferentes costes que supone.
 
 \newpage
 \tableofcontents % si estas líneas se comentan, se eliminan los índices
@@ -123,10 +126,10 @@ Se exponen los siguientes requisitos funcionales de la aplicación:
 		&  El sistema permite sincronizar varios dispositivos, de tal manera que si reproduces la misma canción con el mismo usuario registrado en distintos dispositivos, solo puedas hacerlo en uno de ellos.\\
 		\hline
 		RF15
-		&  El sistema permitirá tener \textit{banner} de anuncios en la aplicación web.\\
+		&  El sistema permitirá tener \textit{banners} de anuncios en la aplicación web.\\
 		\hline
 		RF16
-		& El sistema permite al usuario registrado manejar un equalizador del sonido. \\ 
+		& El sistema permite al usuario registrado manejar un ecualizador del sonido en la aplicación web. \\ 
 		\hline
 		RF17
 		& El artista tiene todas las funcionalidades del usuario registrado, además de poder subir canciones y podcast. \\ 
@@ -202,38 +205,64 @@ Para el desarrollo de la aplicación móvil se usará \textit{Flutter}:
 	\item ¿Qué se va a entregar?
 	\begin{itemize}
 		\item \textbf{Propuesta técnica y económica}: requisitos, prototipos de diseño, presupuesto y costes.
+		\item \textbf{Plan de gestión, análisis, diseño y memoria del proyecto}: 2 iteraciones del proyecto
 		\item \textbf{Prototipo funcional del sistema}, el cual va a ir evolucionando a medida que avanza el proyecto, con el objetivo de obtener feedback del cliente.
 		\item \textbf{Manual de usuario}.
 	\end{itemize}
 \end{itemize}
 
 \begin{itemize}
-	\item ¿Cuándo se va a entregar?
+	\item El proyecto se va a dividir en 3 fases:
 	\begin{itemize}
-		\item \textbf{Entrega 1: plan de trabajo. 24/02/2020}
-		Propuesta técnica y económica.
-		\item \textbf{Entrega 2: diseño y arquitectura. 12/03/2020}
-		Prototipo de alto nivel en el que el cliente puede ver como se comporta la aplicación, pero aún no es funcional.
-		\item \textbf{Entrega 3: implementación. 18/04/2020}
-		Prototipo de alto nivel funcional con el que el cliente puede comprobar el correcto funcionamiento de la aplicación.
-		\item \textbf{Entrega 4: entrega final. 8/05/2020}
-		Prototipo final junto con el manual de usuario.
+		
+		\item \textbf{Definición e inicio del proyecto: hasta el 16/03/2020}
+		\hfill \break
+		2 entregas: \begin{itemize}
+			\item Propuesta técnica y económica (24/02/2020)
+			\item Plan de gestión, análisis, diseño y memoria del proyecto versión 1 (16/03/2020)
+		\end{itemize}
+		2 reuniones con profesor de seguimiento y apoyo.
+		\item \textbf{Primera iteración del proyecto: hasta el 15/04/2020}
+		\hfill \break
+		1 entrega: \begin{itemize}
+			\item Plan de gestión, análisis, diseño y memoria del proyecto versión 2 (15/04/2020)
+		\end{itemize}
+		2 reuniones:
+		\begin{itemize}
+			\item 1 reunión con profesor para seguimiento y apoyo
+			\item 1 reunión con profesor para demostración del software intermedio
+		\end{itemize}
+		\item \textbf{Segunda iteración del proyecto: hasta el 08/06/2020}
+		\hfill \break
+		1 entrega: \begin{itemize}
+			\item Plan de gestión, análisis, diseño y memoria del proyecto versión final + manual de usuario(08/06/2020)
+		\end{itemize}
+		2 reuniones:
+		\begin{itemize}
+			\item 1 reunión con profesor para seguimiento y apoyo
+			\item 1 reunión con profesor para demostración del software final
+		\end{itemize}
 	\end{itemize}
 \end{itemize}
 
 \newpage
 
 \section{Equipo técnico encargado del proyecto}
-La empresa \textit{UPBEAT SA}, dedicada al desarrollo de proyectos de software por demanda, está compuesta por 7 estudiantes de la titulación de Ingeniería Informática en la Universidad de Zaragoza, los cuales cursan las ramas de sistemas de la información y administración de sistemas.
+La empresa \textit{UPBEAT SA}, dedicada al desarrollo de proyectos de software por demanda, está compuesta por 7 estudiantes de la titulación de Ingeniería Informática en la Universidad de Zaragoza, los cuales cursan las ramas de sistemas de la información y tecnologías de la información.
 \hfill \break
-Previamente, se han desarrollado proyectos relacionados con el trabajo a desempeñar, en los cuales se desarrolló e implementó una aplicación web de recomendación de automóviles de bajo consumo. Unido a esto, también se creó todo la gestión de usuarios del sistema.
+\\
+Previamente, se han desarrollado proyectos relacionados con el trabajo a desempeñar, en los cuales se desarrolló e implementó una aplicación web de recomendación de automóviles de bajo consumo y de bonificaciones a las empresas por ser sostenibles y reducir las emisiones contaminantes en su actividad diaria. Para la realización de este trabajo se utilizó una arquitectura en 3 capas en las que se siguió un modelo vista-controlador.\\ Se trabajó con tecnologías como mariaDB, Docker para el despliegue de la aplicación o la utlización de html5, css o jsp y servlets de Java para el modelo estático y dinámico de la aplicación, respectivamente.
 \hfill \break
-La empresa también cuenta experiencia en varias tecnologías punteras en el mercado, como Docker o Angular, este último trabajado en proyectos de integración de logística empresarial.
+\\
+La empresa también cuenta con experiencia en varias tecnologías punteras en el mercado, como Docker, Angular y Spring Boot, los cuales han sido utilizados en proyectos de integración de logística empresarial.
 La empresa en la que se ha trabajado con proyectos similares ha sido Carreras Grupo Logístico.
 \hfill \break
-Varios de los integrantes de la compañía poseen años de experiencia laboral que permiten asegurar el éxito del proyecto expuesto en este documento.
 
+Además uno de los integrantes del equipo, Sergio Torres, fue creador de un sitio web de comercio electrónico, el cual se encuentra actualmente cerrado, demostrando experiencia en la utlización de tecnologías de diseño de interfaces web como HTML5 o CSS.\\
 
+La gran mayoría de los integrantes del equipo también realizaron ya una aplicación móvil de notas en la que se trabajó con Android Studio y se realizó un proyecto Software desde la fase de Análisis hasta el lanzamiento incluyendo la realización de pruebas del software realizado.\\
+
+Además el equipo técnico conoce el proceso que se lleva a cabo en las metodologías ágiles, especialmente SCRUM y pizarras KANBAN, lo cual está directamente relacionado con el plan de trabajo acordado para este proyecto.
 \newpage
 
 \section{Presupuesto}
