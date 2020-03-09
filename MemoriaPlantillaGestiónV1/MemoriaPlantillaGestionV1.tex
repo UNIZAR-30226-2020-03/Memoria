@@ -14,10 +14,13 @@
 \usepackage{amssymb}
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables for horizontal lines
 \usepackage{float}
+\usepackage{pdfpages}
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{fancyhdr}
 \usepackage{eurosym}
+\usepackage{calendar}
+
 
 
 \hyphenation{op-tical net-works semi-conduc-tor} % Corrects some bad hyphenation 
@@ -47,20 +50,8 @@ Sergio Torres Castillo \vspace{0.25cm}
 % make the title area
 \maketitle
 \newpage
-\section*{Resumen ejecutivo}
-En este documento se detalla la propuesta técnica y económica del proyecto UPBEAT.\\  \hfill \break
-Este proyecto tiene como objetivo la creación de un servicio de streaming de música, con las funcionalidades básicas de un reproductor, para canciones y podcasts, con opciones para modificar el sonido, aspectos de red social que permiten añadir amigos y el uso de banners para poder patrocinar productos. \\
-Además existirá un perfil de artista con más funcionalidades que el resto de usuarios, que permitirán gestionar las canciones creadas y/o producidas por los mismos.\\
+\section*{Introducción}
 
-Esta aplicación podrá ser accedida o bien mediante un cliente web o bien desde una aplicación móvil, disponible tanto para IOS como para Android. El servidor contará con una API REST para intercambiar datos entre el servidor y los clientes.\\
-
-En cuanto a la descripción técnica del proyecto, se especifica que el sistema se desarrollará sobre una capa de aplicación web basada en Angular, cumplimentado con una app móvil la cual será creada utilizando Flutter, aplicación usada para el desarrollo de interfaces de usuario para aplicaciones móviles que permite la compilación para ambos sistemas operativos.\\
-Esto permitirá usar servicios REST, con Spring como herramienta de desarrollo, aplicación que ya ha sido utilizada por uno de los miembros de este proyecto. Para la base de datos, se ha decidido utilizar PostgreSQL como la mejor alternativa tras comparar diferentes opciones y reunirse con el profesor asignado. \\ 
-
-Para todo ello, el plan de trabajo que se ha cumplimentado y acordado ha sido establecido por el cliente, contando éste con dos iteraciones en las cuales se deberán ir mostrando los avances logrados y los requisitos que se han satisfecho hasta la fecha.
-El equipo técnico está formado por siete estudiantes de la Universidad de Zaragoza, los cuales han sido formados y siguen formándose sobre conocimientos de programación, bases de datos, sistemas de la información y administración de sistemas entre otras competencias adquiridas, con experiencia en diversos proyectos llevados a cabo a lo largo de las diferentes asignaturas que permitirán superar las diversas fases del proyecto a pesar de la escasa experiencia laboral.\\
-
-Por último, se adjunta también el presupuesto total de la inversión para el proyecto UPBEAT, con el desglose del mismo y los diferentes costes que supone.
 
 \newpage
 \tableofcontents % si estas líneas se comentan, se eliminan los índices
@@ -71,209 +62,74 @@ Por último, se adjunta también el presupuesto total de la inversión para el p
 \pagestyle{fancy}
 \lhead{\begin{picture}(0,0) \put(0,0){\includegraphics[width=40mm]{logoEina.png}} \end{picture}}
 \rhead{\begin{picture}(0,0) \put(-100.7,0){\includegraphics[width=35mm]{logoDefinitivo3.png}} \end{picture}}
-\section{Objetivos del sistema}
-
-\subsection{Análisis de requisitos preliminar}
-Se exponen los siguientes requisitos funcionales de la aplicación:
+\section{Organización del proyecto}
 \begin{table}[H]
-	\begin{tabular}{p{4cm} p{10cm}}
+	\hspace*{-3.7cm}
+	\centering
+	\begin{tabular}{|l|l|l|}
 		\hline
-		\hline 
-		\textbf{Requisito funcional}
-		\vspace{0.5mm} & \textbf{Descripción} \\ 
-		\hline
-		\hline
-		RF1
-		& El sistema permite almacenar canciones y podcasts en formato \textit{.mp3}, \textit{.WAV} y \textit{.WMA}. \\ 
-		\hline 
-		RF2
-		& El usuario accede al sistema mediante una aplicación móvil o una aplicación web. \\ 
-		\hline
-		RF3
-		& El artista accede al sistema mediante una aplicación web. \\ 
-		\hline
-		RF4
-		& El sistema permite reproducir y pausar una canción. También permite saltar a la siguiente (si la hubiera), retroceder a la anterior, y elegir un bucle de la misma o reproducir aleatoriamente varias canciones. \\ 
-		\hline
-		RF5
-		& El sistema permite al usuario registrado subir o bajar el volumen de la canción/podcast en reproducción. \\ 
-		\hline
-		RF6
-		& El usuario debe registrarse en el sistema o iniciar sesión para acceder a sus funcionalidades. \\ 
-		\hline
-		RF7
-		& El usuario y el artista acceden al sistema mediante un nombre identificatorio y una contraseña. \\ 
-		\hline
-		RF8
-		& El usuario registrado puede buscar canciones, álbumes, artistas y podcasts. \\ 
-		\hline
-		RF9
-		& El usuario registrado puede crear playlists (agrupación de una o varias canciones) . \\ 
-		\hline
-		RF10
-		& El usuario registrado puede añadir/eliminar de sus favoritos una canción, playlist, álbum o podcast . \\ 
-		\hline
-		RF11
-		& El usuario registrado puede ordenar por fecha de lanzamiento, nombre y por artista las canciones añadidas a una playlist. \\ 
-		\hline
-		RF12
-		&  El usuario registrado puede seguir a otros usuarios dentro del sistema.\\
-		\hline
-		RF13
-		&  El usuario registrado puede filtrar la búsqueda de una determinada canción por género y época.\\
-		\hline
-		RF14
-		&  El sistema permite sincronizar varios dispositivos, de tal manera que si reproduces la misma canción con el mismo usuario registrado en distintos dispositivos, solo puedas hacerlo en uno de ellos.\\
-		\hline
-		RF15
-		&  El sistema permitirá tener \textit{banners} de anuncios en la aplicación web.\\
-		\hline
-		RF16
-		& El sistema permite al usuario registrado manejar un ecualizador del sonido en la aplicación web. \\ 
-		\hline
-		RF17
-		& El artista tiene todas las funcionalidades del usuario registrado, además de poder subir canciones y podcast. \\ 
-		\hline
-		RF18
-		& El artista puede elegir la fecha y hora de una publicación, o subirla inmediatamente. \\ 
-		\hline
+		\multicolumn{1}{|c|}{\textbf{Integrante}} & \multicolumn{1}{c|}{\textbf{Puesto}} & \multicolumn{1}{c|}{\textbf{Responsabilidades}}\\ \hline
+		Alejandro Ruiz Sumelzo                    & \begin{tabular}[c]{@{}l@{}}Director del proyecto.\\ Coordinador y desarrollador del grupo de back-end.\\ Encargado de la documentación del análisis y diseño\\ del sistema.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Responsable de redactar algunas actas\\ en reuniones con el profesor.\\ Control de la distribución de trabajo\\ (elaboración de calendario) y \\ revisión de esfuerzos.\\ Desarrollador de modelos, repositorios y \\controladores de la API.\\ Encargado del despliegue del back end \\sobre el servidor.\end{tabular} \\ \hline
+		\begin{tabular}[c]{@{}c@{}}Alejandro\\ Piedrafita Barrantes\end{tabular}
+		&                                                                       Desarrollador de apoyo para el grupo de back-end                                                                                                                 &  
+		\begin{tabular}[c]{@{}l@{}}Realización de tareas de gestión\\  (edición de memoria y otros documentos).\\ Desarrollador de modelos, repositorios y \\ controladores de la API. \\ Diseño del sistema mediante diagramas.\end{tabular}\\ \hline
+		\begin{tabular}[c]{@{}c@{}}Víctor\\ Pérez Santmartín\end{tabular}
+		&                                                                       Desarrollador de apoyo para el grupo de back-end                                                                                                                 &  
+		\begin{tabular}[c]{@{}l@{}}
+		Responsable de redactar algunas actas\\ en reuniones con el profesor.\\
+		Realización de tareas de gestión\\  (edición de memoria y otros documentos).\\ Desarrollador de modelos, repositorios y \\ controladores de la API. \\ Encargado del diseño e implementación\\ de la base de datos.\end{tabular}\\ \hline
 	\end{tabular}
 \end{table}
-\break
-Se exponen los siguientes requisitos no funcionales de la aplicación:
 
-\begin{table}[H]
-	\begin{tabular}{p{4cm} p{10cm}}
-		\hline
-		\hline 
-		\textbf{Requisito no funcional} & \textbf{Descripción} \\ 
-		\hline
-		\hline
-		RNF1 
-		&  El sistema permitirá ser utilizar un diseño modular, un lenguaje fácil de entender, usar y mantener.\\ 
-		\hline
-		RNF2
-		&  La seguridad será fundamental a la hora de garantizar la confidencialidad y autentificación de las canciones, así como para cumplir determinados aspectos de la LOPD y los derechos de los cantautores.\\ 
-		\hline
-		RNF3
-		&  El cliente tendrá el desarrollo móvil en formato Android e iOS.\\ 
-		\hline
-	\end{tabular}
-\end{table}
+\section{Plan de gestión del proyecto}
+
+\subsection{Procesos}
+
+\subsubsection{Procesos de inicio del proyecto}
+
+\subsubsection{Procesos de ejecución y control del proyecto}
+El estándar a utilizar en el código, puesto que va ser una aplicación web, se utilizará TypeScript. Los responsables de realizar la puesta en marcha serán los encargados de la parte Front-end y de la parte Back-end. La creación de copias de seguridad y semejantes se realizarían de manera automática gracias a GitHub. 
+El repositorio que se creará con todos los archivos referentes al proyecto se encontrará en GitHub, para que todos los integrantes del proyecto puedan acceder fácilmente a los archivos. Además, se usará el Issue Tracker de GitHub para la gestión de incidencias. 
+El proyecto estará dividido en varios repositorios: uno específico para Front-end, otro para Back-end, y la memoria. Para conseguir que no se modifique el mismo fichero por dos personas al mismo tiempo y evitar problemas, cada equipo tendrá más sub-ramas de desarrollo, por ejemplo, una para cada miembro del equipo, que serán actualizadas con cambios no siempre funcionales y cuando sean más estables se volcarán a la rama de desarrollo principal. 
+En la rama principal de cada uno de los repositorios sólo podrá haber una versión funcional del sistema, que antes de ser subida será sometida a diferentes test automáticos, entre los que se incluirán test para comprobar la estabilidad del sistema (pruebas de sobrecarga) y test que revisarán las acciones disponibles para comprobar los requisitos que se han resuelto. 
+Para que lo desarrollado en cada uno de estos repositorios pase al repositorio funcional, cada líder de las respectivas partes revisará el código actualizado y si todo está correcto se considerará válido. Todos los componentes del equipo son capaces de modificar los ficheros de los repositorios excepto en el de las versiones, el cual solo podrán subir archivos y modificarlos los líderes del Front-End y el Back-End.
+
+\subsubsection{Procesos técnicos}
+\newpage
+\subsection{Planes}
+
+\subsubsection{Plan de gestión de configuraciones}
+La convención de nombres utilizadas para nombrar los distintos archivos sería la siguiente: 
+\begin{figure}[H]
+	\centering{
+		\includegraphics[scale=0.55]{conf1.png}}
+\end{figure}
+Las versiones solo se modificarán cada vez que se produzcan cambios suficientemente importantes, como por ejemplo la implementación de una nueva funcionalidad. 
+Cada vez que se cree una nueva versión, pero sus cambios sean menores, como resolución de errores, se modificará su número de revisión, pero no de versión. 
+Se crearán ficheros de documentación que permita ir recopilando toda la información referente a los cambios.
+Además, en los ficheros de documentación en los que se expliquen las diversas funcionalidades que tiene la aplicación y que errores se han ido resolviendo, cuando estos sean de una nueva versión o revisión solo se ofrecerá la información sobre los cambios que existan entre esta y la versión o revisión anterior, pero siempre que se cambie la versión se documentarán los cambios respecto a la primera revisión de la versión anterior (p.ej. La versión 2.1 solo contendrá las novedades respecto a la versión 2.0, pero la versión 3.0 contendrá todos los cambios que hayan sucedido desde la versión 2.0 aunque la mayoría se hayan documentado ya en las revisiones). 
+
+\newpage
+\subsubsection{Plan de construcción y despliegue del software}
+
+\subsubsection{Plan de aseguramiento de la calidad}
+
 \newpage
 
-\section{Descripción técnica}
-
-\subsection{Aspectos técnicos para el usuario}
-El usuario solamente necesitará de un navegador web para conseguir conectarse al proyecto \textit{UPBEAT}, además de usar aplicaciones para Android e iOS.
-Este proyecto será compatible con el navegador \textit{Google Chrome}.\vspace{0.5cm}
-\hfill\break
-\begin{figure}[H]
-
-\end{figure}
-
-\subsection{Aspectos técnicos para el cliente}
-El proyecto será entregado en un servidor web de hosting, el cual implementará todos los servicios necesarios para que funcione correctamente. Se le proporcionará un usuario y contraseña para acceder al mismo y hacerse cargo una vez se desarrolle y entregue el proyecto.
+\subsubsection{Calendario del proyecto y división del trabajo}
+En la primera iteración del proceso de diseño nos centraremos en desarrollar las funcionalidades principales del sistema, mientras que en la segunda iteración se corregirán todos los errores encontrados en la primera, se implementarán las funcionalidades secundarias y se afinara el diseño de la página web y de las aplicaciones móviles para que sean más agradables al usuario. 
 \hfill \break
-También se le proporcionará al cliente los archivos de ambas aplicaciones desarrolladas para la tecnología móvil.
-\begin{figure}[H]
-
-\end{figure}
-
-\newpage
-\subsection{Descripción técnica preliminar}
-Para la realización del proyecto, el sistema usará la siguiente estructura: \vspace{0.15cm}
-
-\begin{figure}[H]
-
-\end{figure}
-\vspace{0.15cm}
-
-El desarrollo del cliente web se centrará en \textit{Angular} principalmente, el cual se conectará al servidor de aplicaciones que proporcionará \textit{Spring Boot}. Este último gestionará las consultas y conexiones con la base de datos, desarrollada e implementada en \textit{PostgreSQL}.
-Para el desarrollo de la aplicación móvil se usará \textit{Flutter}:
-\begin{figure}[H]
-
-\end{figure}
-\newpage
-
-\section{Plan de trabajo}
-\begin{itemize}
-	\item ¿Qué se va a entregar?
-	\begin{itemize}
-		\item \textbf{Propuesta técnica y económica}: requisitos, prototipos de diseño, presupuesto y costes.
-		\item \textbf{Plan de gestión, análisis, diseño y memoria del proyecto}: 2 iteraciones del proyecto
-		\item \textbf{Prototipo funcional del sistema}, el cual va a ir evolucionando a medida que avanza el proyecto, con el objetivo de obtener feedback del cliente.
-		\item \textbf{Manual de usuario}.
-	\end{itemize}
-\end{itemize}
-
-\begin{itemize}
-	\item El proyecto se va a dividir en 3 fases:
-	\begin{itemize}
-		
-		\item \textbf{Definición e inicio del proyecto: hasta el 16/03/2020}
-		\hfill \break
-		2 entregas: \begin{itemize}
-			\item Propuesta técnica y económica (24/02/2020)
-			\item Plan de gestión, análisis, diseño y memoria del proyecto versión 1 (16/03/2020)
-		\end{itemize}
-		2 reuniones con profesor de seguimiento y apoyo.
-		\item \textbf{Primera iteración del proyecto: hasta el 15/04/2020}
-		\hfill \break
-		1 entrega: \begin{itemize}
-			\item Plan de gestión, análisis, diseño y memoria del proyecto versión 2 (15/04/2020)
-		\end{itemize}
-		2 reuniones:
-		\begin{itemize}
-			\item 1 reunión con profesor para seguimiento y apoyo
-			\item 1 reunión con profesor para demostración del software intermedio
-		\end{itemize}
-		\item \textbf{Segunda iteración del proyecto: hasta el 08/06/2020}
-		\hfill \break
-		1 entrega: \begin{itemize}
-			\item Plan de gestión, análisis, diseño y memoria del proyecto versión final + manual de usuario(08/06/2020)
-		\end{itemize}
-		2 reuniones:
-		\begin{itemize}
-			\item 1 reunión con profesor para seguimiento y apoyo
-			\item 1 reunión con profesor para demostración del software final
-		\end{itemize}
-	\end{itemize}
-\end{itemize}
-
-\newpage
-
-\section{Equipo técnico encargado del proyecto}
-La empresa \textit{UPBEAT SA}, dedicada al desarrollo de proyectos de software por demanda, está compuesta por 7 estudiantes de la titulación de Ingeniería Informática en la Universidad de Zaragoza, los cuales cursan las ramas de sistemas de la información y tecnologías de la información.
+Para la primera iteración, se planea permitir la creación, edición y borrado de clientes con sus credenciales básicos: nombre de usuario, nombre real, correo, contraseña. Unido a esto, comprobar si las entidades Artista y Usuario se crean y borrar correctamente.  También se permitirá la subida de canciones por parte de los artistas; estas canciones serán visibles en la aplicación y podrán ser reproducidas (al igual que los podcasts). Los álbumes estarán disponibles con su descripción y podrán ser consultados, reproduciendo cada una de sus canciones.
 \hfill \break
-\\
-Previamente, se han desarrollado proyectos relacionados con el trabajo a desempeñar, en los cuales se desarrolló e implementó una aplicación web de recomendación de automóviles de bajo consumo y de bonificaciones a las empresas por ser sostenibles y reducir las emisiones contaminantes en su actividad diaria. Para la realización de este trabajo se utilizó una arquitectura en 3 capas en las que se siguió un modelo vista-controlador.\\ Se trabajó con tecnologías como mariaDB, Docker para el despliegue de la aplicación o la utlización de html5, css o jsp y servlets de Java para el modelo estático y dinámico de la aplicación, respectivamente.
-\hfill \break
-\\
-La empresa también cuenta con experiencia en varias tecnologías punteras en el mercado, como Docker, Angular y Spring Boot, los cuales han sido utilizados en proyectos de integración de logística empresarial.
-La empresa en la que se ha trabajado con proyectos similares ha sido Carreras Grupo Logístico.
-\hfill \break
+Para la segunda iteración se finalizarán los requisitos que, por falta de tiempo, no pudieron ser completados en la primera y se añadirán funcionalidades al sistema. Estas funcionalidades son: añadir canciones a la lista de reproducción de un usuario, permitir información adicional en los perfiles de usuario (como puede ser una foto de perfil, una descripción, etc.), además de poder seguirse entre dos usuarios. Se permitirá la búsqueda y filtrado de determinadas canciones y/o álbumes por unos determinados parámetros, al igual que utilizar un ecualizador en la aplicación web con el uso de \textit{banners}.
 
-Además uno de los integrantes del equipo, Sergio Torres, fue creador de un sitio web de comercio electrónico, el cual se encuentra actualmente cerrado, demostrando experiencia en la utlización de tecnologías de diseño de interfaces web como HTML5 o CSS.\\
-
-La gran mayoría de los integrantes del equipo también realizaron ya una aplicación móvil de notas en la que se trabajó con Android Studio y se realizó un proyecto Software desde la fase de Análisis hasta el lanzamiento incluyendo la realización de pruebas del software realizado.\\
-
-Además el equipo técnico conoce el proceso que se lleva a cabo en las metodologías ágiles, especialmente SCRUM y pizarras KANBAN, lo cual está directamente relacionado con el plan de trabajo acordado para este proyecto.
+\includepdf[pages=1-2]{calendar.pdf}
 \newpage
+\section{Análisis y diseño del sistema}
 
-\section{Presupuesto}
-\textit{D. ALEJANDRO RUIZ SUMELZO}, domiciliado para estos efectos en Zaragoza, provincia de Zaragoza, calle \textit{Camino de Juslibol N.º 36}, y DNI \textit{25203767E} en nombre y representación de \textit{UPBEAT S.A.} con C.I.F. \textit{123456} y domicilio fiscal en Zaragoza, calle \textit{María de Luna}, edificio \textit{Ada Byron}, enterado del anuncio publicado en el Moodle de la Universidad de Zaragoza, a día 13 de febrero de 2020 y de las condiciones y requisitos que se exigen para la adjudicación de los servicios de la \textbf{REALIZACIÓN DE UNA APLICACIÓN DE REPRODUCCIÓN DE MÚSICA}, provincia de ZARAGOZA, se compromete a tomar a su cargo la ejecución de los mismos, con estricta sujeción a los requisitos y condiciones expresados, por las cantidades que se enumeran en concepto de precio, indicándose igualmente el IVA a soportar por la Administración, en cada caso, según las soluciones siguientes:
+\subsection{Análisis de requisitos}
 
-\begin{figure}[H]
-\end{figure}
-
-El licitador hace constar que el precio o precios del contrato ofertado incluye el importe de las tasas que sean de aplicación, con conformidad con lo señalado en el Pliego de Cláusulas Administrativas Particulares que rige este contrato. 
-\newpage
-\section*{Anexo I. Estimación de costes}
-\begin{figure}[H]
-\end{figure}
-
-En total, los beneficios obtenidos serían de \textbf{14.226,69 \euro}.
+\subsection{Diseño del sistema}
 
 \end{document}
 

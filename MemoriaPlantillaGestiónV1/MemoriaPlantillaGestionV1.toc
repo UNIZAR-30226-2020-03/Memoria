@@ -1,11 +1,16 @@
 \babel@toc {spanish}{}
 \hfill \textbf {Página} \par 
-\contentsline {section}{\numberline {1}Objetivos del sistema}{4}%
-\contentsline {subsection}{\numberline {1.1}Análisis de requisitos preliminar}{4}%
-\contentsline {section}{\numberline {2}Descripción técnica}{6}%
-\contentsline {subsection}{\numberline {2.1}Aspectos técnicos para el usuario}{6}%
-\contentsline {subsection}{\numberline {2.2}Aspectos técnicos para el cliente}{6}%
-\contentsline {subsection}{\numberline {2.3}Descripción técnica preliminar}{7}%
-\contentsline {section}{\numberline {3}Plan de trabajo}{8}%
-\contentsline {section}{\numberline {4}Equipo técnico encargado del proyecto}{9}%
-\contentsline {section}{\numberline {5}Presupuesto}{10}%
+\contentsline {section}{\numberline {1}Organización del proyecto}{4}%
+\contentsline {section}{\numberline {2}Plan de gestión del proyecto}{4}%
+\contentsline {subsection}{\numberline {2.1}Procesos}{4}%
+\contentsline {subsubsection}{\numberline {2.1.1}Procesos de inicio del proyecto}{4}%
+\contentsline {subsubsection}{\numberline {2.1.2}Procesos de ejecución y control del proyecto}{4}%
+\contentsline {subsubsection}{\numberline {2.1.3}Procesos técnicos}{5}%
+\contentsline {subsection}{\numberline {2.2}Planes}{6}%
+\contentsline {subsubsection}{\numberline {2.2.1}Plan de gestión de configuraciones}{6}%
+\contentsline {subsubsection}{\numberline {2.2.2}Plan de construcción y despliegue del software}{7}%
+\contentsline {subsubsection}{\numberline {2.2.3}Plan de aseguramiento de la calidad}{7}%
+\contentsline {subsubsection}{\numberline {2.2.4}Calendario del proyecto y división del trabajo}{8}%
+\contentsline {section}{\numberline {3}Análisis y diseño del sistema}{11}%
+\contentsline {subsection}{\numberline {3.1}Análisis de requisitos}{11}%
+\contentsline {subsection}{\numberline {3.2}Diseño del sistema}{11}%

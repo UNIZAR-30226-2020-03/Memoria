@@ -1,0 +1,208 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Monthly Calendar
+% LaTeX Template
+% Version 1.1 (19/9/2018)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Evan Sultanik with modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the calendar.sty file to be in the same directory as the
+% .tex file. The calendar.sty file provides the necessary structure to create the
+% calendar.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Can also use 9pt or 11pt for a smaller or larger overall font size
+
+\usepackage{calendar} % Use the calendar.sty style
+
+\usepackage[landscape, a4paper, margin=1cm]{geometry} % Page dimensions and margins
+
+\usepackage{palatino} % Use the Palatino font
+
+\begin{document}
+
+\begin{center}
+	\textsc{\LARGE Abril}\\ % Month
+	\textsc{\large 2020} % Year
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\begin{calendar}{\textwidth} % Calendar to be the entire width of the page
+	
+	%----------------------------------------------------------------------------------------
+	%	BLANK DAYS BEFORE THE BEGINNING OF THE CALENDAR
+	%----------------------------------------------------------------------------------------
+	
+	% This part defines the number of blank days at the beginning of the calendar before the first of the month starts. If you need this to be more than 4 (i.e. the first starts on a Friday or Saturday in a 31 day month), then you have two options: 
+	% 1) You can uncomment another one or two \BlankDay's below which will make a new week (6 total) which makes the calendar too big for one page, remedy this by decreasing the size of each day by replacing 2.5cm below with a smaller number. 
+	% 2) Make the spill-over days start at the top left of the calendar (i.e. the calendar starts with 31 then a few days blank then 1, 2, 3, etc). The second option can be configured by uncommenting the below:
+	
+	%\setcounter{calendardate}{31} % Begin the count with 31 so the top left day is 31; this can be changed to 29 or 30 as required
+	%\day{}{\vspace{2.5cm}} % 31 - add another line identical to this if starting at 30 or earlier
+	
+	% You will need to comment out the 31 in the NUMBERED DAYS AND CALENDAR CONTENT section below for this as well as commenting out one of the \BlankDay's below. Play around with it and you will get it.
+	
+	\BlankDay
+	\BlankDay
+	\BlankDay
+	%\BlankDay
+	%\BlankDay
+	%\BlankDay
+	
+	%----------------------------------------------------------------------------------------
+	%	NUMBERED DAYS AND CALENDAR CONTENT
+	%----------------------------------------------------------------------------------------
+	
+	% These are the numbered days in the template - if there are less than 31 days simply comment out the days that aren't needed
+	
+	% \vspace{2.5cm} is only there to provide an even look to the calendar where each day is 2.5cm tall, it can be changed or removed to automatically adjust to the day in the week with the most content
+	
+	% Use \eventskip instead of \\ for newlines between events
+	
+	\setcounter{calendardate}{1} % Start the date counter at 1
+	
+	\day{}{\vspace{2.5cm}} % 1
+	\day{}{\vspace{2.5cm}} % 2
+	\day{Proyecto Upbeat}{\dayheader{Back: lógica del login y registro, modificación del perfil.}}{} % 3
+	\day{Proyecto Upbeat}{\dayheader{Web y móvil: vistas de login y registro, modificación del perfil.}}{} % 4
+	\day{}{\vspace{2.5cm}} % 5
+	\day{Proyecto Upbeat}{\dayheader{Primera versión de la web y la aplicación, que permita a un cliente registrarse, iniciar sesión y modificar el perfil.}}{} % 6
+	\day{}{\vspace{2.5cm}} % 7
+	\day{}{\vspace{2.5cm}} % 8
+	\day{}{\vspace{2.5cm}} % 9
+	\day{Proyecto Upbeat}{\dayheader{Back: lógica para reproducir una canción.}}{} % 10
+	\day{Proyecto Upbeat}{\dayheader{Web y móvil: ver y reproducir una canción, pantalla de inicio.}}{} % 11
+	\day{}{\vspace{2.5cm}} % 12
+	\day{Proyecto Upbeat}{\dayheader{Pruebas conjuntas de las funcionalidades y corrección de errores.}}{} % 13
+	\day{}{\vspace{2.5cm}} % 14
+	\day{Proyecto Upbeat}{\dayheader{Entrega de la segunda versión de la memoria.}}{} % 15
+	\day{}{\vspace{2.5cm}} % 16
+	\day{Proyecto Upbeat}{\dayheader{Back: lógica para crear cantantes y subir canciones.}}{} % 17
+	\day{Proyecto Upbeat}{\dayheader{Web y móvil: vistas para crear cantantes y subir canciones.}}{} % 18
+	\day{}{\vspace{2.5cm}} % 19
+	\day{Proyecto Upbeat}{\dayheader{Pruebas conjuntas de las funcionalidades y corrección de errores.}}{} % 20 
+	\day{}{\vspace{2.5cm}} % 21
+	\day{}{\vspace{2.5cm}} % 22
+	\day{}{\vspace{2.5cm}} % 23
+	\day{Proyecto Upbeat}{\dayheader{Web y móvil: vistas para ver y escuchar un álbum con una o varias canciones, además de la información del mismo.}}{} % 24
+	\day{Proyecto Upbeat}{\dayheader{Back: lógica de un álbum con una o varias canciones, además de la información del mismo.}}{} % 25
+	\day{}{\vspace{2.5cm}} % 26
+	\day{Proyecto Upbeat}{\dayheader{Pruebas conjuntas de las funcionalidades y corrección de errores.}}{} % 27
+	\day{}{\vspace{2.5cm}} % 28
+	\day{}{\vspace{2.5cm}} % 29 
+	\day{Proyecto Upbeat}{\dayheader{Despliegue de la lógica y BD en servidor en la nube.}} % 30 
+	
+	% Un-comment the \BlankDay below if the bottom line of the calendar is missing
+	%\BlankDay
+	
+	% Un-comment to start counting again after 31
+	%\setcounter{calendardate}{1}
+	%\day{}{\vspace{2.5cm}} % 1
+	%\day{}{\vspace{2.5cm}} % 2
+	%\day{}{\vspace{2.5cm}} % 3
+	
+	%----------------------------------------------------------------------------------------
+	
+	\finishCalendar
+\end{calendar}
+\newpage
+\begin{center}
+	\textsc{\LARGE Mayo}\\ % Month
+	\textsc{\large 2020} % Year
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\begin{calendar}{\textwidth} % Calendar to be the entire width of the page
+	
+	%----------------------------------------------------------------------------------------
+	%	BLANK DAYS BEFORE THE BEGINNING OF THE CALENDAR
+	%----------------------------------------------------------------------------------------
+	
+	% This part defines the number of blank days at the beginning of the calendar before the first of the month starts. If you need this to be more than 4 (i.e. the first starts on a Friday or Saturday in a 31 day month), then you have two options: 
+	% 1) You can uncomment another one or two \BlankDay's below which will make a new week (6 total) which makes the calendar too big for one page, remedy this by decreasing the size of each day by replacing 2.5cm below with a smaller number. 
+	% 2) Make the spill-over days start at the top left of the calendar (i.e. the calendar starts with 31 then a few days blank then 1, 2, 3, etc). The second option can be configured by uncommenting the below:
+	
+	%\setcounter{calendardate}{31} % Begin the count with 31 so the top left day is 31; this can be changed to 29 or 30 as required
+	%\day{}{\vspace{2.5cm}} % 31 - add another line identical to this if starting at 30 or earlier
+	
+	% You will need to comment out the 31 in the NUMBERED DAYS AND CALENDAR CONTENT section below for this as well as commenting out one of the \BlankDay's below. Play around with it and you will get it.
+	
+	\BlankDay
+	\BlankDay
+	\BlankDay
+	\BlankDay
+	\BlankDay
+	%\BlankDay
+	
+	%----------------------------------------------------------------------------------------
+	%	NUMBERED DAYS AND CALENDAR CONTENT
+	%----------------------------------------------------------------------------------------
+	
+	% These are the numbered days in the template - if there are less than 31 days simply comment out the days that aren't needed
+	
+	% \vspace{2.5cm} is only there to provide an even look to the calendar where each day is 2.5cm tall, it can be changed or removed to automatically adjust to the day in the week with the most content
+	
+	% Use \eventskip instead of \\ for newlines between events
+	
+	\setcounter{calendardate}{1} % Start the date counter at 1
+	
+	\day{Proyecto Upbeat}{\dayheader{Web y móvil: vistas para crear listas de reproducción y canciones favoritas.}}{} % 1 - Example of content: first argument is the heading, then the content of the day
+	\day{Proyecto Upbeat}{\dayheader{Back: lógica de creación de las listas de reproducción y canciones favoritas.}}{} % 2 - Example of day with multiple headings
+	\day{}{\vspace{2.5cm}} % 3
+	\day{Proyecto Upbeat}{\dayheader{Pruebas conjuntas de las funcionalidades y corrección de errores.}}{} % 4
+	\day{}{\vspace{2.5cm}} % 5
+	\day{}{\vspace{2.5cm}} % 6
+	\day{Proyecto Upbeat}{\dayheader{Despliegue de la lógica y BD en servidor en la nube.}}{} % 7
+	\day{Proyecto Upbeat}{\dayheader{Web y móvil: vistas para seguir a otros usuarios y listas de reproducción.}}{} % 8
+	\day{Proyecto Upbeat}{\dayheader{Back: lógica para seguir a otros usuarios y listas de reproducción.}}{} % 9
+	\day{}{\vspace{2.5cm}} % 10
+	\day{Proyecto Upbeat}{\dayheader{Pruebas conjuntas de las funcionalidades y corrección de errores.}}{} % 11
+	\day{}{\vspace{2.5cm}} % 12
+	\day{}{\vspace{2.5cm}} % 13
+	\day{Proyecto Upbeat}{\dayheader{Despliegue de la lógica y BD en servidor en la nube.}}{} % 14
+	\day{Proyecto Upbeat}{\dayheader{Web: equalizador y banners, aplicación final.}}{} % 15
+	\day{Proyecto Upbeat}{\dayheader{Back: banners, lógica y BD final.}}{} % 16
+	\day{Proyecto Upbeat}{\dayheader{ Despliegue de la lógica y BD en servidor en la nube.\break Pruebas y depuración.}}{} % 17
+	\day{Proyecto Upbeat}{\dayheader{Pruebas y depuración.}}{} % 18
+	\day{Proyecto Upbeat}{\dayheader{Pruebas y depuración.}}{} % 19
+	\day{Proyecto Upbeat}{\dayheader{Pruebas y depuración.}}{} % 20 
+	\day{Proyecto Upbeat}{\dayheader{Pruebas y depuración.}}{} % 21
+	\day{Proyecto Upbeat}{\dayheader{Pruebas y depuración.}}{} % 22
+	\day{Proyecto Upbeat}{\dayheader{Pruebas y depuración.}}{} % 23
+	\day{Proyecto Upbeat}{\dayheader{Pruebas y depuración.}}{} % 24
+	\day{Proyecto Upbeat}{\dayheader{Pruebas y depuración.}}{} % 25
+	\day{Proyecto Upbeat}{\dayheader{Pruebas y depuración.}}{} % 26
+	\day{Proyecto Upbeat}{\dayheader{Pruebas y depuración.}}{} % 27
+	\day{Proyecto Upbeat}{\dayheader{Pruebas y depuración.}}{} % 28
+	\day{Proyecto Upbeat}{\dayheader{Pruebas y depuración.}}{} % 29 
+	\day{Proyecto Upbeat}{\dayheader{Pruebas y depuración.}} % 30 
+	
+	% Un-comment the \BlankDay below if the bottom line of the calendar is missing
+	%\BlankDay
+	
+	% Un-comment to start counting again after 31
+	%\setcounter{calendardate}{1}
+	%\day{}{\vspace{2.5cm}} % 1
+	%\day{}{\vspace{2.5cm}} % 2
+	%\day{}{\vspace{2.5cm}} % 3
+	
+	%----------------------------------------------------------------------------------------
+	
+	\finishCalendar
+\end{calendar}
+\end{document}
