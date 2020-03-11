@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.3.9)  9 MAR 2020 20:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.3.9)  11 MAR 2020 11:24
 entering extended mode
 **./MemoriaPlantillaGestionV1.tex
 (MemoriaPlantillaGestionV1.tex
@@ -353,44 +353,26 @@ LaTeX Info: Redefining \% on input line 1.
 \openout3 = `MemoriaPlantillaGestionV1.toc'.
 
  [3]
-Overfull \hbox (109.65929pt too wide) in paragraph at lines 67--82
+Overfull \hbox (120.63148pt too wide) in paragraph at lines 67--96
+ []|  [] 
+ []
+
+
+Overfull \hbox (89.18698pt too wide) in paragraph at lines 99--116
  []|  [] 
  []
 
 <logoEina.png, id=21, 1204.5pt x 343.2825pt>
 File: logoEina.png Graphic file (type png)
 <use logoEina.png>
-Package pdftex.def Info: logoEina.png  used on input line 96.
+Package pdftex.def Info: logoEina.png  used on input line 117.
 (pdftex.def)             Requested size: 113.81102pt x 32.43407pt.
 <logoDefinitivo3.png, id=22, 422.7795pt x 136.71075pt>
 File: logoDefinitivo3.png Graphic file (type png)
 <use logoDefinitivo3.png>
-Package pdftex.def Info: logoDefinitivo3.png  used on input line 96.
+Package pdftex.def Info: logoDefinitivo3.png  used on input line 117.
 (pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
 [4 <./logoEina.png> <./logoDefinitivo3.png>]
-File: logoEina.png Graphic file (type png)
-<use logoEina.png>
-Package pdftex.def Info: logoEina.png  used on input line 98.
-(pdftex.def)             Requested size: 113.81102pt x 32.43407pt.
-File: logoDefinitivo3.png Graphic file (type png)
-<use logoDefinitivo3.png>
-Package pdftex.def Info: logoDefinitivo3.png  used on input line 98.
-(pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
- [5]
-<conf1.png, id=31, 430.60875pt x 16.863pt>
-File: conf1.png Graphic file (type png)
-<use conf1.png>
-Package pdftex.def Info: conf1.png  used on input line 105.
-(pdftex.def)             Requested size: 236.83553pt x 9.27466pt.
-File: logoEina.png Graphic file (type png)
-<use logoEina.png>
-Package pdftex.def Info: logoEina.png  used on input line 112.
-(pdftex.def)             Requested size: 113.81102pt x 32.43407pt.
-File: logoDefinitivo3.png Graphic file (type png)
-<use logoDefinitivo3.png>
-Package pdftex.def Info: logoDefinitivo3.png  used on input line 112.
-(pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
- [6 <./conf1.png>]
 File: logoEina.png Graphic file (type png)
 <use logoEina.png>
 Package pdftex.def Info: logoEina.png  used on input line 117.
@@ -399,78 +381,111 @@ File: logoDefinitivo3.png Graphic file (type png)
 <use logoDefinitivo3.png>
 Package pdftex.def Info: logoDefinitivo3.png  used on input line 117.
 (pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
- [7]
-<calendar.pdf, id=40, 845.0471pt x 597.50829pt>
-File: calendar.pdf Graphic file (type pdf)
-<use calendar.pdf>
-Package pdftex.def Info: calendar.pdf  used on input line 126.
-(pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
-File: calendar.pdf Graphic file (type pdf)
-<use calendar.pdf>
-Package pdftex.def Info: calendar.pdf  used on input line 126.
-(pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
-<calendar.pdf, id=43, page=1, 845.0471pt x 597.50829pt>
-File: calendar.pdf Graphic file (type pdf)
-<use calendar.pdf, page 1>
-Package pdftex.def Info: calendar.pdf , page1 used on input line 126.
-(pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
-File: calendar.pdf Graphic file (type pdf)
-<use calendar.pdf, page 1>
-Package pdftex.def Info: calendar.pdf , page1 used on input line 126.
-(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+ [5]
 File: logoEina.png Graphic file (type png)
 <use logoEina.png>
-Package pdftex.def Info: logoEina.png  used on input line 126.
+Package pdftex.def Info: logoEina.png  used on input line 132.
 (pdftex.def)             Requested size: 113.81102pt x 32.43407pt.
 File: logoDefinitivo3.png Graphic file (type png)
 <use logoDefinitivo3.png>
-Package pdftex.def Info: logoDefinitivo3.png  used on input line 126.
+Package pdftex.def Info: logoDefinitivo3.png  used on input line 132.
+(pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
+ [6]
+<conf1.png, id=34, 430.60875pt x 16.863pt>
+File: conf1.png Graphic file (type png)
+<use conf1.png>
+Package pdftex.def Info: conf1.png  used on input line 139.
+(pdftex.def)             Requested size: 236.83553pt x 9.27466pt.
+File: logoEina.png Graphic file (type png)
+<use logoEina.png>
+Package pdftex.def Info: logoEina.png  used on input line 146.
+(pdftex.def)             Requested size: 113.81102pt x 32.43407pt.
+File: logoDefinitivo3.png Graphic file (type png)
+<use logoDefinitivo3.png>
+Package pdftex.def Info: logoDefinitivo3.png  used on input line 146.
+(pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
+ [7 <./conf1.png>]
+File: logoEina.png Graphic file (type png)
+<use logoEina.png>
+Package pdftex.def Info: logoEina.png  used on input line 151.
+(pdftex.def)             Requested size: 113.81102pt x 32.43407pt.
+File: logoDefinitivo3.png Graphic file (type png)
+<use logoDefinitivo3.png>
+Package pdftex.def Info: logoDefinitivo3.png  used on input line 151.
 (pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
  [8]
+<calendar.pdf, id=43, 845.0471pt x 597.50829pt>
+File: calendar.pdf Graphic file (type pdf)
+<use calendar.pdf>
+Package pdftex.def Info: calendar.pdf  used on input line 160.
+(pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
+File: calendar.pdf Graphic file (type pdf)
+<use calendar.pdf>
+Package pdftex.def Info: calendar.pdf  used on input line 160.
+(pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
+<calendar.pdf, id=46, page=1, 845.0471pt x 597.50829pt>
 File: calendar.pdf Graphic file (type pdf)
 <use calendar.pdf, page 1>
-Package pdftex.def Info: calendar.pdf , page1 used on input line 126.
-(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+Package pdftex.def Info: calendar.pdf , page1 used on input line 160.
+(pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
 File: calendar.pdf Graphic file (type pdf)
 <use calendar.pdf, page 1>
-Package pdftex.def Info: calendar.pdf , page1 used on input line 126.
+Package pdftex.def Info: calendar.pdf , page1 used on input line 160.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
-File: calendar.pdf Graphic file (type pdf)
-<use calendar.pdf, page 1>
-Package pdftex.def Info: calendar.pdf , page1 used on input line 126.
-(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
-
-[9 <./calendar.pdf>]
-<calendar.pdf, id=62, page=2, 845.0471pt x 597.50829pt>
-File: calendar.pdf Graphic file (type pdf)
-<use calendar.pdf, page 2>
-Package pdftex.def Info: calendar.pdf , page2 used on input line 126.
-(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
-File: calendar.pdf Graphic file (type pdf)
-<use calendar.pdf, page 2>
-Package pdftex.def Info: calendar.pdf , page2 used on input line 126.
-(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
-File: calendar.pdf Graphic file (type pdf)
-<use calendar.pdf, page 2>
-Package pdftex.def Info: calendar.pdf , page2 used on input line 126.
-(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
- [10 <./calendar.pdf>]
 File: logoEina.png Graphic file (type png)
 <use logoEina.png>
-Package pdftex.def Info: logoEina.png  used on input line 134.
+Package pdftex.def Info: logoEina.png  used on input line 160.
 (pdftex.def)             Requested size: 113.81102pt x 32.43407pt.
 File: logoDefinitivo3.png Graphic file (type png)
 <use logoDefinitivo3.png>
-Package pdftex.def Info: logoDefinitivo3.png  used on input line 134.
+Package pdftex.def Info: logoDefinitivo3.png  used on input line 160.
 (pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
- [11] (MemoriaPlantillaGestionV1.aux
+
+[9]
+File: calendar.pdf Graphic file (type pdf)
+<use calendar.pdf, page 1>
+Package pdftex.def Info: calendar.pdf , page1 used on input line 160.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+File: calendar.pdf Graphic file (type pdf)
+<use calendar.pdf, page 1>
+Package pdftex.def Info: calendar.pdf , page1 used on input line 160.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+File: calendar.pdf Graphic file (type pdf)
+<use calendar.pdf, page 1>
+Package pdftex.def Info: calendar.pdf , page1 used on input line 160.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+ [10 <./calendar.pdf>]
+<calendar.pdf, id=65, page=2, 845.0471pt x 597.50829pt>
+File: calendar.pdf Graphic file (type pdf)
+<use calendar.pdf, page 2>
+Package pdftex.def Info: calendar.pdf , page2 used on input line 160.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+File: calendar.pdf Graphic file (type pdf)
+<use calendar.pdf, page 2>
+Package pdftex.def Info: calendar.pdf , page2 used on input line 160.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+File: calendar.pdf Graphic file (type pdf)
+<use calendar.pdf, page 2>
+Package pdftex.def Info: calendar.pdf , page2 used on input line 160.
+(pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
+ [11 <./calendar.pdf>]
+File: logoEina.png Graphic file (type png)
+<use logoEina.png>
+Package pdftex.def Info: logoEina.png  used on input line 168.
+(pdftex.def)             Requested size: 113.81102pt x 32.43407pt.
+File: logoDefinitivo3.png Graphic file (type png)
+<use logoDefinitivo3.png>
+Package pdftex.def Info: logoDefinitivo3.png  used on input line 168.
+(pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
+ [12]
+(MemoriaPlantillaGestionV1.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
  4933 strings out of 492450
  67456 string characters out of 3129753
- 153106 words of memory out of 3000000
+ 154106 words of memory out of 3000000
  9180 multiletter control sequences out of 15000+200000
  12156 words of font info for 47 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -483,9 +498,9 @@ nts/type1/public/amsfonts/cm/cmr17.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmti10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/urw/pal
 atino/uplr8a.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.
 pfb>
-Output written on MemoriaPlantillaGestionV1.pdf (11 pages, 313231 bytes).
+Output written on MemoriaPlantillaGestionV1.pdf (12 pages, 316466 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
+ 94 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
