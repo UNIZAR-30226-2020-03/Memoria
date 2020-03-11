@@ -122,11 +122,25 @@ Sergio Torres Castillo \vspace{0.25cm}
 \subsubsection{Procesos de inicio del proyecto}
 
 \subsubsection{Procesos de ejecución y control del proyecto}
-El estándar a utilizar en el código, puesto que va ser una aplicación web, se utilizará TypeScript. Los responsables de realizar la puesta en marcha serán los encargados de la parte Front-end y de la parte Back-end. La creación de copias de seguridad y semejantes se realizarían de manera automática gracias a GitHub. 
-El repositorio que se creará con todos los archivos referentes al proyecto se encontrará en GitHub, para que todos los integrantes del proyecto puedan acceder fácilmente a los archivos. Además, se usará el Issue Tracker de GitHub para la gestión de incidencias. 
-El proyecto estará dividido en varios repositorios: uno específico para Front-end, otro para Back-end, y la memoria. Para conseguir que no se modifique el mismo fichero por dos personas al mismo tiempo y evitar problemas, cada equipo tendrá más sub-ramas de desarrollo, por ejemplo, una para cada miembro del equipo, que serán actualizadas con cambios no siempre funcionales y cuando sean más estables se volcarán a la rama de desarrollo principal. 
-En la rama principal de cada uno de los repositorios sólo podrá haber una versión funcional del sistema, que antes de ser subida será sometida a diferentes test automáticos, entre los que se incluirán test para comprobar la estabilidad del sistema (pruebas de sobrecarga) y test que revisarán las acciones disponibles para comprobar los requisitos que se han resuelto. 
-Para que lo desarrollado en cada uno de estos repositorios pase al repositorio funcional, cada líder de las respectivas partes revisará el código actualizado y si todo está correcto se considerará válido. Todos los componentes del equipo son capaces de modificar los ficheros de los repositorios excepto en el de las versiones, el cual solo podrán subir archivos y modificarlos los líderes del Front-End y el Back-End.
+Las comunicaciones internas se llevarán a cabo mediante un grupo de WhatsApp estimado para ello, para cualquier otra duda o comunicación entre componentes del equipo se hará de forma individual. La resolución de tareas será totalmente independiente y completa en el entorno de GitHub.
+\hfill \break
+Los responsables de realizar la puesta en marcha serán los encargados de la parte front-end y de la parte back-end. La creación de copias de seguridad y semejantes se realizarían de manera automática gracias a GitHub. 
+\hfill \break
+El repositorio que se creará con todos los archivos referentes al proyecto se encontrará en GitHub, para que todos los integrantes del proyecto puedan acceder fácilmente a los archivos. Además, se usará el \textit{Issue Tracker} de GitHub para la gestión de incidencias; el director del mismo se encargará de crear las incidencias principales, y cada uno de los encargados de cada parte las completarán en cada uno de sus ámbitos. 
+\hfill \break
+El proyecto estará dividido en varios repositorios: uno específico para front-end, otro para back-end, y la memoria. Para conseguir que no se modifique el mismo fichero por dos personas al mismo tiempo y evitar problemas, cada equipo tendrá más sub-ramas de desarrollo, por ejemplo, una para cada miembro del equipo, que serán actualizadas con cambios no siempre funcionales y cuando sean más estables se volcarán a la rama de desarrollo principal. 
+\hfill \break
+En la rama principal de cada uno de los repositorios, sólo podrá haber una versión funcional del sistema, que antes de ser subida será sometida a diferentes test automáticos, entre los que se incluirán test para comprobar la estabilidad del sistema (pruebas de sobrecarga) y test que revisarán las acciones disponibles para comprobar los requisitos que se han resuelto, además de ser testeado por varios miembros del equipo. 
+\hfill \break
+Para que lo desarrollado en cada uno de estos repositorios pase al repositorio funcional, cada líder de las respectivas partes revisará el código actualizado y si todo está correcto se considerará válido. 
+\hfill \break
+Todas las semanas habrá una serie de tareas asociadas mediante el \textit{Issue Tracker}. Al final de cada semana, el responsable de cada parte del proyecto revisa las tareas que se han realizado esa semana y se realiza un seguimiento de las mismas: si hay tareas que no se han cumplido, se asigna automáticamente para la siguiente semana, siendo estas tareas las primeras que se deberán hacer.  
+\hfill \break
+Además, cada semana el responsable de cada una de las partes revisará cuántas tareas se han realizado para la siguiente iteración, controlando si han sido completadas o no y cuánto tiempo de retraso acumula respecto a la planificación original.  Tras esta revisión, este responsable asignará las tareas de la semana a todos los miembros del equipo que puedan trabajar esa semana. 
+\hfill \break
+Durante el desarrollo del proyecto puede haber problemas y disputas entre los miembros del equipo. Para tratar de resolverlos los coordinadores serán los primeros en mediar entre los miembros en disputa y, si hay alguna razón que haga imposible esta mediación, será el resto del equipo quien deberá votar en consecuencia. 
+\hfill \break
+Todos los componentes del equipo son capaces de modificar los ficheros de los repositorios, excepto en el de las versiones, el cual solo podrán subir archivos y modificarlos los líderes del front-end y el back-end.
 
 \subsubsection{Procesos técnicos}
 \newpage
@@ -162,6 +176,114 @@ Para la segunda iteración se finalizarán los requisitos que, por falta de tiem
 \section{Análisis y diseño del sistema}
 
 \subsection{Análisis de requisitos}
+Se exponen los siguientes requisitos funcionales de la aplicación:
+\begin{table}[H]
+	\begin{tabular}{p{4cm} p{10cm}}
+		\hline
+		\hline 
+		\textbf{Requisito funcional}
+		\vspace{0.5mm} & \textbf{Descripción} \\ 
+		\hline
+		\hline
+		RF1
+		& El sistema permite la existencia de clientes. \\ 
+		\hline 
+		RF2
+		& Los clientes podrán ser usuarios normales o artistas. \\ 
+		\hline
+		RF3
+		& Los clientes se registrarán mediante usuario y contraseña. \\ 
+		\hline
+		RF4
+		& Un usuario es un cliente registrado que puede acceder a las funciones de la aplicación como escuchar canciones/podcasts, crear y seguir listas de reproducción, seguir a otros usuarios, escuchar álbumes y ver las canciones subidas por los artistas. \\ 
+		\hline
+		RF5
+		& Un artista es un cliente registrado que puede realizar las mismas funciones que un usuario, además de crear álbumes y subir canciones. \\ 
+		\hline
+		RF6
+		& Un cliente se compone de un nombre único, nombre personal y apellidos, un correo electrónico, una contraseña para acceder a la aplicación, una foto de perfil y las redes sociales que posee (si quiere añadirlas de forma opcional). \\ 
+		\hline
+		RF7
+		& El sistema permite que los clientes modifiquen los datos de su perfil, es decir, su nombre, correo, contraseña, foto de perfil e información de las redes sociales. \\ 
+		\hline
+		RF8
+		& Los clientes accederán a la aplicación mediante una aplicación móvil o una aplicación web. \\ 
+		\hline
+		RF9
+		& El sistema permite reproducir y pausar una canción y/o podcasts. También permite saltar a la siguiente (si la hubiera), retroceder a la anterior, y elegir un bucle de la misma o reproducir aleatoriamente varias canciones y/o podcasts. \\ 
+		\hline
+		RF10
+		& Una canción se compone de un título, un audio, artista/s que la han creado, género de la canción, país de la canción y veces que ha sido reproducida. \\ 
+		\hline
+		RF11
+		& Una lista de reproducción es una lista de canciones generadas por un cliente. \\ 
+		\hline
+		RF12
+		& El sistema permite que un cliente cree y borren listas de reproducción creados por ellos mismos, las cuales serán públicas. \\ 
+		\hline
+		RF13
+		& El sistema permite que los clientes añadan canciones a las listas de reproducción creadas por ellos mismos. \\ 
+		\hline
+		RF14
+		& El sistema permite que los clientes sigan listas de reproducción creadas por otros usuarios. \\ 
+		\hline
+		RF15
+		& El sistema permite que solo los artistas puedan subir canciones. \\ 
+		\hline
+		RF16
+		& El sistema permite buscar una determinada canción por nombre o género, además de un artista por nombre. \\ 
+		\hline
+	\end{tabular}
+\end{table}
+\break
+\begin{table}[H]
+	\begin{tabular}{p{4cm} p{10cm}}
+		\hline
+		\hline 
+		\textbf{Requisito funcional}
+		\vspace{0.5mm} & \textbf{Descripción} \\ 
+		\hline
+		\hline
+		RF17
+		& Las búsquedas por palabras clave deberán al menos contener una palabra, de mínimo cuatro caracteres. \\ 
+		\hline 
+		RF18
+		& El sistema permite ver las canciones más populares de un país. \\ 
+		\hline 
+		RF19
+		& El sistema permite ver las canciones más populares de un artista. \\ 
+		\hline
+		RF20
+		& El sistema permitirá usar un equalizador al escuchar las canciones. \\ 
+		\hline
+		RF21
+		& El sistema permitirá el uso de \textit{banners} para ofrecer publicidad. \\ 
+		\hline
+	\end{tabular}
+\end{table}
+Se exponen los siguientes requisitos no funcionales de la aplicación:
+
+\begin{table}[H]
+	\begin{tabular}{p{4cm} p{10cm}}
+		\hline
+		\hline 
+		\textbf{Requisito no funcional} & \textbf{Descripción} \\ 
+		\hline
+		\hline
+		RNF1 
+		&  El sistema permitirá ser utilizar un diseño modular, un lenguaje fácil de entender, usar y mantener.\\ 
+		\hline
+		RNF2
+		&  La seguridad será fundamental a la hora de garantizar la confidencialidad y autentificación de las canciones, así como para cumplir determinados aspectos de la LOPD y los derechos de los cantautores.\\ 
+		\hline
+		RNF3
+		&  El cliente tendrá el desarrollo móvil en formato Android e iOS.\\ 
+		\hline
+		RNF4
+		& El sistema permite almacenar canciones y podcasts en formato \textit{.mp3}, \textit{.WAV} y \textit{.OGG}. \\
+	\end{tabular}
+\end{table}
+\newpage
 
 \subsection{Diseño del sistema}
 
