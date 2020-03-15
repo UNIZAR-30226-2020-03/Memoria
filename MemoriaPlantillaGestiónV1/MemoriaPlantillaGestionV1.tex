@@ -82,25 +82,25 @@ Usará también un sistema de sincronización, permitiendo que el usuario retome
 		\begin{tabular}[c]{@{}c@{}}Alejandro\\ Piedrafita Barrantes\end{tabular}
 		&                                                                       Desarrollador de apoyo para el grupo de back-end                                                                                                                 &  
 		\begin{tabular}[c]{@{}l@{}}Realización de tareas de gestión\\  (edición de memoria y otros documentos).\\ Desarrollador de modelos, repositorios y \\ controladores de la API. \\ Diseño del sistema mediante diagramas.\end{tabular}\\ \hline
-		\begin{tabular}[c]{@{}c@{}}Víctor\\ Pérez Santmartín\end{tabular}
+		\begin{tabular}[c]{@{}c@{}}Víctor\\ Pérez Sanmartín\end{tabular}
 		&                                                                       Desarrollador de apoyo para el grupo de back-end                                                                                                                 &  
 		\begin{tabular}[c]{@{}l@{}}
 		Responsable de redactar algunas actas\\ en reuniones con el profesor.\\
 		Realización de tareas de gestión\\  (edición de memoria y otros documentos).\\ Desarrollador de modelos, repositorios y \\ controladores de la API. \\ Encargado del diseño e implementación\\ de la base de datos.\end{tabular}\\ \hline
 		\begin{tabular}[c]{@{}c@{}}Álvaro Santamaría\\ de la Fuente\end{tabular}
-		& \begin{tabular}[c]{@{}l@{}} Coordinador y desarrollador del grupo de \\ front-end móvil.\\ Encargado de la gestión de la parte front móvil \\ del proyecto.\end{tabular}     &  
+		& \begin{tabular}[c]{@{}l@{}}  Desarrollador del grupo de front-end móvil.\\ Encargado de la gestión de la parte front móvil \\ del proyecto.\end{tabular}     &  
 		\begin{tabular}[c]{@{}l@{}}
 		Realización de tareas de gestión\\ (edición de memoria y otros documentos).\\
 		Desarrollo e implementación del front-end \\de la aplicación móvil.\\
-		Control de la distribución de trabajo y \\ coordinación dentro del grupo \\ front-end de móvil.\\
+		Implementar la lógica de la aplicación de\\ Android e iOS.\\
 		Encargado de unificar las partes \\de la aplicación móvil y llevar a cabo \\ el despliegue en Android e iOS.
 		\end{tabular}\\ \hline
 		\begin{tabular}[c]{@{}c@{}}José Félix \\ Yagüe Royo\end{tabular}
-		&                                                                       Desarrollador de apoyo para el grupo de front-end                                                                                                                 &  
+		&                                                                       Coordinador y desarrollador de apoyo para el grupo de front-end                                                                                                                 &  
 		\begin{tabular}[c]{@{}l@{}}Realización de tareas de gestión\\ (edición de memoria y otros documentos).\\
 		Desarrollo e implementación del front end \\de la aplicación móvil.\\
 		Encargado de la conexión con el API REST. \\
-		Implementar la lógica de la aplicación de\\ Android e iOS.\end{tabular}\\ \hline
+		Control de la distribución de trabajo y \\ coordinación dentro del grupo \\ front-end de móvil.\\\end{tabular}\\ \hline
 	\end{tabular}
 \end{table}
 
@@ -152,6 +152,19 @@ Durante el desarrollo del proyecto puede haber problemas y disputas entre los mi
 Todos los componentes del equipo son capaces de modificar los ficheros de los repositorios, excepto en el de las versiones, el cual solo podrán subir archivos y modificarlos los líderes del front-end y el back-end.
 
 \subsubsection{Procesos técnicos}
+Para el desarrollo del software de la parte del Front-end de la aplicación móvil se va a utilizar el entorno de Android Studio haciendo uso de su integración con \textit{git} para facilitar el control de versiones y así, gestionar de forma uniforme entre los dos integrantes del grupo, el repositorio \textit{"}Flutter\textit{"} en el que se irá desarrollando el software correspondiente a la aplicación móvil. Para las pruebas en el dispositivo de iOS se utilizará el entorno de VSCode.\\\\
+Para el proceso de prueba de funcionalidades de la aplicación móvil se seguirá el siguiente guión:
+	\begin{itemize}
+		\item Primero el desarrollador se asegurará de tener la última versión del repositorio \textit{"}Flutter\textit{"}, efectuando un pull de la rama que desea testear.
+		
+		\item A continuación se abre el entorno de desarrollo (VSCode en caso de que se vaya a probar la aplicación en iOS o Android Studio en el caso de un dispositivo Android) y se procede a buildear el código de la app. En caso de encontrar errores se notificarán al encargado de haber realizado esa parte del código.
+		
+		\item Se ejecuta la aplicación libre de errores de compilación en el dispositivo deseado (iOS o Android)
+		
+		\item Posteriormente se realiza la prueba de la nueva funcionalidad implementada, comprobando que no se dan situaciones de error ni resultados inesperados.
+		
+		\item Si las pruebas realizados han sido satisfactorias, se informará al coordinador del grupo de front-end móvil y realizará un merge de esa rama con la rama máster.
+	\end{itemize}
 \newpage
 \subsection{Planes}
 
@@ -207,7 +220,7 @@ Se exponen los siguientes requisitos funcionales de la aplicación:
 		& Un usuario es un cliente registrado que puede acceder a las funciones de la aplicación como escuchar canciones/podcasts, crear y seguir listas de reproducción, seguir a otros usuarios, escuchar álbumes y ver las canciones subidas por los artistas. \\ 
 		\hline
 		RF5
-		& Un artista es un cliente registrado que puede realizar las mismas funciones que un usuario, además de crear álbumes y subir canciones. \\ 
+		& Un artista es un cliente registrado que puede realizar las mismas funciones que un usuario, además de crear álbumes y subir canciones. Crear un álbum consiste en la creación de un grupo de canciones que pertenecen al mismo artista. \\ 
 		\hline
 		RF6
 		& Un cliente se compone de un nombre único, nombre personal y apellidos, un correo electrónico, una contraseña para acceder a la aplicación, una foto de perfil y las redes sociales que posee (si quiere añadirlas de forma opcional). \\ 
