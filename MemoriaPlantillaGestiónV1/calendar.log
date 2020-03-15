@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.11.21)  9 MAR 2020 18:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.11.22)  15 MAR 2020 11:13
 entering extended mode
 **./calendar.tex
 (calendar.tex
 LaTeX2e <2019-10-01> patch level 3
-("D:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
+("C:\Users\alvar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2019/10/25 v1.4k Standard LaTeX document class
-("D:\Program Files\MiKTeX 2.9\tex/latex/base\size10.clo"
+("C:\Users\alvar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo"
 File: size10.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -26,10 +26,10 @@ Package: calendar 2018/09/19LaTeX2e class file `calendar' v3.2
 Created by Evan Sultanik
 ****** Bugs/comments/suggestions/technicalities to Evan Sultanik -- evan@sultan
 ik.com ******
-("D:\Program Files\MiKTeX 2.9\tex/latex/tools\tabularx.sty"
+("C:\Users\alvar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\tabularx.sty
+"
 Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
-
-("D:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
+ ("C:\Users\alvar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen103
 \ar@mcellbox=\box27
@@ -51,23 +51,26 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \c@calendardate=\count90
 \StartingDayNumber=\count91
 )
-("D:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
+("C:\Users\alvar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
+sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+("C:\Users\alvar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
+y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-("D:\Program Files\MiKTeX 2.9\tex/generic/iftex\ifpdf.sty"
+("C:\Users\alvar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifpdf.sty"
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
-
-("D:\Program Files\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
+("C:\Users\alvar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
 Package: iftex 2019/11/07 v1.0c TeX engine tests
 ))
-("D:\Program Files\MiKTeX 2.9\tex/generic/iftex\ifvtex.sty"
+("C:\Users\alvar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifvtex.sty
+"
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-("D:\Program Files\MiKTeX 2.9\tex/generic/iftex\ifxetex.sty"
+("C:\Users\alvar\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifxetex.st
+y"
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count92
@@ -83,8 +86,10 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen117
 \Gm@dimlist=\toks17
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg"))
-("D:\Program Files\MiKTeX 2.9\tex/latex/psnfss\palatino.sty"
+("C:\Users\alvar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
+cfg"))
+("C:\Users\alvar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\palatino.st
+y"
 Package: palatino 2005/04/12 PSNFSS-v9.2a (SPQR) 
 ) (calendar.aux)
 \openout1 = `calendar.aux'.
@@ -104,7 +109,7 @@ LaTeX Font Info:    ... okay on input line 35.
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 3
 5.
 
-("D:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1ppl.fd"
+("C:\Users\alvar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ppl.fd"
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 *geometry* driver: auto-detecting
@@ -151,7 +156,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 121--122
 
 [1
 
-{C:/Users/Alex/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/alvar/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 \@calendarwidth=\dimen119
 \@currday=\count97
 \@numdays=\count98
@@ -163,16 +168,17 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 207--208
 [2] (calendar.aux) ) 
 Here is how much of TeX's memory you used:
  980 strings out of 492450
- 13415 string characters out of 3129751
+ 13956 string characters out of 3120004
  116411 words of memory out of 3000000
  5380 multiletter control sequences out of 15000+200000
  11389 words of font info for 28 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  31i,13n,34p,264b,346s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<D
-:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><D:/Program File
-s/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on calendar.pdf (2 pages, 36374 bytes).
+{C:/Users/alvar/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
+/dvips/base/8r.enc}<C:/Users/alvar/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/urw/palatino/uplr8a.pfb><C:/Users/alvar/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/urw/palatino/uplri8a.pfb>
+Output written on calendar.pdf (2 pages, 36376 bytes).
 PDF statistics:
  18 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
