@@ -59,7 +59,7 @@ De manera similar, los artistas tendrán las mismas características que cualqui
 \hfill \break
 Añadirá aspecto de la 'red social', tales como seguir a otros usuarios o sus playlist creadas.
 \hfill \break
-Se permitirá usar la aplicación de tres maneras diferentes: web, Android e iOS.
+Se permitirá usar la aplicación de tres maneras diferentes: web, \textit{Android} e \textit{iOS}.
 Usará también un sistema de sincronización, permitiendo que el usuario retome cualquier canción donde la había dejado, en todos los dispositivos.
 
 \newpage
@@ -88,15 +88,15 @@ Usará también un sistema de sincronización, permitiendo que el usuario retome
 		Responsable de redactar algunas actas\\ en reuniones con el profesor.\\
 		Realización de tareas de gestión\\  (edición de memoria y otros documentos).\\ Desarrollador de modelos, repositorios y \\ controladores de la API. \\ Encargado del diseño e implementación\\ de la base de datos.\end{tabular}\\ \hline
 		\begin{tabular}[c]{@{}c@{}}Álvaro Santamaría\\ de la Fuente\end{tabular}
-		& \begin{tabular}[c]{@{}l@{}}  Desarrollador del grupo de front-end móvil.\\ Encargado de la gestión de la parte front móvil \\ del proyecto.\end{tabular}     &  
+		& \begin{tabular}[c]{@{}l@{}}  Desarrollador del grupo de front-end móvil.\end{tabular}     &  
 		\begin{tabular}[c]{@{}l@{}}
 		Realización de tareas de gestión\\ (edición de memoria y otros documentos).\\
 		Desarrollo e implementación del front-end \\de la aplicación móvil.\\
-		Implementar la lógica de la aplicación de\\ Android e iOS.\\
-		Encargado de unificar las partes \\de la aplicación móvil y llevar a cabo \\ el despliegue en Android e iOS.
+		Implementar la lógica de la aplicación de\\ \textit{Android} e \textit{iOS}.\\
+		Encargado de unificar las partes \\de la aplicación móvil y llevar a cabo \\ el despliegue en \textit{Android} e \textit{iOS}.
 		\end{tabular}\\ \hline
-		\begin{tabular}[c]{@{}c@{}}José Félix \\ Yagüe Royo\end{tabular}
-		&                                                                       Coordinador y desarrollador de apoyo para el grupo de front-end                                                                                                                 &  
+		\begin{tabular}[c]{@{}c@{}}José Félix Yagüe\\ Royo\end{tabular}
+		&                                                                       \begin{tabular}[c]{@{}l@{}}  Desarrollador del grupo de front-end móvil.\\ Encargado de la gestión de la parte front móvil \\ del proyecto.\end{tabular}                                                  &  
 		\begin{tabular}[c]{@{}l@{}}Realización de tareas de gestión\\ (edición de memoria y otros documentos).\\
 		Desarrollo e implementación del front end \\de la aplicación móvil.\\
 		Encargado de la conexión con el API REST. \\
@@ -129,33 +129,42 @@ Usará también un sistema de sincronización, permitiendo que el usuario retome
 \subsection{Procesos}
 
 \subsubsection{Procesos de inicio del proyecto}
+En el equipo de front-end de movil se va a utilizar \textit{Android Studio} como entorno de desarrollo, y \textit{Flutter} como \textit{SDK}, el cual utiliza \textit{Dart} como lenguaje de programación. Para la realización de las pruebas, se van a utilizar tanto un emulador, como un móvil real con \textit{Android 10}. Para \textit{iOS} se va a instalar \textit{XCode} en \textit{Mac} ya que es el IDE oficial de \textit{Apple}, pero se va a mantener tanto \textit{Flutter} como \textit{Dart} para su desarrollo, y un emulador para las pruebas. La aplicación requerirá tener instalado \textit{Android} 5.0 mínimo para funcionar.\\
+\hfill \break
+De manera similar, para la realización de la aplicación web, solamente es necesario tener \textit{Google Chrome} para hacerlo funcionar. El desarrollo se realizará sobre \textit{VSCode}.
+\hfill \break
+Se ha elegido un tamaño de 15 GB en la BD, suficiente para llevar a cabo pruebas con diversas canciones y configuraciones.
 
 \subsubsection{Procesos de ejecución y control del proyecto}
-Las comunicaciones internas se llevarán a cabo mediante un grupo de WhatsApp estimado para ello, para cualquier otra duda o comunicación entre componentes del equipo se hará de forma individual. La resolución de tareas será totalmente independiente y completa en el entorno de GitHub.
+Las comunicaciones internas se llevarán a cabo mediante un grupo de \textit{WhatsApp} estimado para ello, para cualquier otra duda o comunicación entre componentes del equipo se hará de forma individual. La resolución de tareas será totalmente independiente y completa en el entorno de \textit{GitHub}.\\
 \hfill \break
-Los responsables de realizar la puesta en marcha serán los encargados de la parte front-end y de la parte back-end. La creación de copias de seguridad y semejantes se realizarían de manera automática gracias a GitHub. 
+Los responsables de realizar la puesta en marcha serán los encargados de la parte front-end y de la parte back-end. La creación de copias de seguridad y semejantes se realizarían de manera automática gracias a \textit{GitHub}. 
 \hfill \break
-El repositorio que se creará con todos los archivos referentes al proyecto se encontrará en GitHub, para que todos los integrantes del proyecto puedan acceder fácilmente a los archivos. Además, se usará el \textit{Issue Tracker} de GitHub para la gestión de incidencias; el director del mismo se encargará de crear las incidencias principales, y cada uno de los encargados de cada parte las completarán en cada uno de sus ámbitos. 
+El repositorio que se creará con todos los archivos referentes al proyecto se encontrará en \textit{GitHub}, para que todos los integrantes del proyecto puedan acceder fácilmente a los archivos. Además, se usará el \textit{Issue Tracker} de \textit{GitHub} para la gestión de incidencias; el director del mismo se encargará de crear las incidencias principales, y cada uno de los encargados de cada parte las completarán en cada uno de sus ámbitos.\\
 \hfill \break
 El proyecto estará dividido en varios repositorios: uno específico para front-end, otro para back-end, y la memoria. Para conseguir que no se modifique el mismo fichero por dos personas al mismo tiempo y evitar problemas, cada equipo tendrá más sub-ramas de desarrollo, por ejemplo, una para cada miembro del equipo, que serán actualizadas con cambios no siempre funcionales y cuando sean más estables se volcarán a la rama de desarrollo principal. 
 \hfill \break
 En la rama principal de cada uno de los repositorios, sólo podrá haber una versión funcional del sistema, que antes de ser subida será sometida a diferentes test automáticos, entre los que se incluirán test para comprobar la estabilidad del sistema (pruebas de sobrecarga) y test que revisarán las acciones disponibles para comprobar los requisitos que se han resuelto, además de ser testeado por varios miembros del equipo. 
 \hfill \break
-Para que lo desarrollado en cada uno de estos repositorios pase al repositorio funcional, cada líder de las respectivas partes revisará el código actualizado y si todo está correcto se considerará válido. 
-\hfill \break
+Para que lo desarrollado en cada uno de estos repositorios pase al repositorio funcional, cada líder de las respectivas partes revisará el código actualizado y si todo está correcto se considerará válido. \\
+\hfill \break 
 Todas las semanas habrá una serie de tareas asociadas mediante el \textit{Issue Tracker}. Al final de cada semana, el responsable de cada parte del proyecto revisa las tareas que se han realizado esa semana y se realiza un seguimiento de las mismas: si hay tareas que no se han cumplido, se asigna automáticamente para la siguiente semana, siendo estas tareas las primeras que se deberán hacer.  
 \hfill \break
-Además, cada semana el responsable de cada una de las partes revisará cuántas tareas se han realizado para la siguiente iteración, controlando si han sido completadas o no y cuánto tiempo de retraso acumula respecto a la planificación original.  Tras esta revisión, este responsable asignará las tareas de la semana a todos los miembros del equipo que puedan trabajar esa semana. 
+Además, cada semana el responsable de cada una de las partes revisará cuántas tareas se han realizado para la siguiente iteración, controlando si han sido completadas o no y cuánto tiempo de retraso acumula respecto a la planificación original.  Tras esta revisión, este responsable asignará las tareas de la semana a todos los miembros del equipo que puedan trabajar esa semana. \\
 \hfill \break
 Durante el desarrollo del proyecto puede haber problemas y disputas entre los miembros del equipo. Para tratar de resolverlos los coordinadores serán los primeros en mediar entre los miembros en disputa y, si hay alguna razón que haga imposible esta mediación, será el resto del equipo quien deberá votar en consecuencia. 
 \hfill \break
 Todos los componentes del equipo son capaces de modificar los ficheros de los repositorios, excepto en el de las versiones, el cual solo podrán subir archivos y modificarlos los líderes del front-end y el back-end.
+\newpage
 
 \subsubsection{Procesos técnicos}
-Para el desarrollo del software de la parte del Front-end de la aplicación móvil se va a utilizar el entorno de Android Studio haciendo uso de su integración con \textit{git} para facilitar el control de versiones y así, gestionar de forma uniforme entre los dos integrantes del grupo, el repositorio \textit{"}Flutter\textit{"} en el que se irá desarrollando el software correspondiente a la aplicación móvil. Para las pruebas en el dispositivo de iOS se utilizará el entorno de VSCode.\\\\
+En primer lugar, en el front-end web se ha utilizado la herramienta \textit{Angular} que utiliza \textit{JavaScript}, \textit{HTML} y \textit{CSS}. Se han utilizado librerías ya predefinidas en la guía de estilo \textit{Angular Material} para los elementos de diseño. Para desplegar y probar la aplicación hemos empleado el navegador \textit{Google Chrome}.
+Para usar esta herramienta ha sido necesario utilizar el manual de \textit{Angular} y algunos tutoriales online de \textit{JavaScript} y \textit{CSS}.\\
+\hfill \break
+Para el desarrollo del software de la parte del Front-end de la aplicación móvil se va a utilizar el entorno de \textit{Android Studio} haciendo uso de su integración con \textit{git} para facilitar el control de versiones y así, gestionar de forma uniforme entre los dos integrantes del grupo, el repositorio \textit{Flutter} en el que se irá desarrollando el software correspondiente a la aplicación móvil. Para las pruebas en el dispositivo de \textit{iOS} se utilizará el entorno de \textit{VSCode}.\\\\
 Para el proceso de prueba de funcionalidades de la aplicación móvil se seguirá el siguiente guión:
 	\begin{itemize}
-		\item Primero el desarrollador se asegurará de tener la última versión del repositorio \textit{"}Flutter\textit{"}, efectuando un pull de la rama que desea testear.
+		\item Primero el desarrollador se asegurará de tener la última versión del repositorio \textit{Flutter}, efectuando un pull de la rama que desea testear.
 		
 		\item A continuación se abre el entorno de desarrollo (VSCode en caso de que se vaya a probar la aplicación en iOS o Android Studio en el caso de un dispositivo Android) y se procede a buildear el código de la app. En caso de encontrar errores se notificarán al encargado de haber realizado esa parte del código.
 		
@@ -181,8 +190,22 @@ Además, en los ficheros de documentación en los que se expliquen las diversas 
 
 \newpage
 \subsubsection{Plan de construcción y despliegue del software}
+Respecto a la parte front-end web, la manera utiliza para desplegar el software para probarlo se ejecuta mediante la línea de comandos y un servidor virtual accesible desde un navegador local (como \textit{Chrome}) mediante la ruta \textit{localhost} y el puerto \textit{4200}. No se requiere ningún tipo de autentificación para ello.
+Algo a destacar es la omisión por parte de \textit{GitHub} de la carpeta de módulos de Angular (librerías que utiliza el proyecto), ya que ocupa demasiado, de tal forma que cada uno tiene que tener su propia carpeta de librerías.\\
+\hfill \break
+Para la parte móvil, el uso de \textit{Android Studio} y \textit{Gradle} permite la instalación automática de las dependencias necesarias del proyecto, además de compilar el mismo cada vez que se prueba una parte del código.\\
+\hfill \break
+Para comprobar cada una de las funcionalidades que se van añadiendo, se realizan de manera manual, primero en los ordenadores personales de cada integrante y luego integrándolo con el servidor de producción. 
+Los módulos son independientes entre ellos y se comunican principalmente mediante peticiones \textit{HTTP}, esto permite simular las peticiones antes de probarlo con el entorno real de producción. 
+Este servidor de producción será \textit{Heroku}, pero aún no se ha implementado todo para poder ir subiendo las diferentes versiones de manera correcta. 
 
 \subsubsection{Plan de aseguramiento de la calidad}
+Para asegurar la calidad, en el caso de la aplicación \textit{Android} se usará la guía de estilo de \textit{Android} \footnote{https://developer.android.com/design}, siguiendo algunos consejos que ahí se comentan. En la aplicación web, se usará determinados ejemplos de la página de \textit{Angular} \footnote{https://angular.io/} creada por \textit{Google}, la cual permite usar y conocer conceptos importantes a la hora de hacer un código limpio y eficiente. \\
+\hfill \break
+Además, siempre se realizarán las pruebas necesarias antes de realizar un \textit{commit} con la última actualización del proyecto validado. Por lo que la versión que residirá en \textit{GitHub} será la correcta. 
+\hfill \break
+Una vez que la base de datos, aplicación web y móvil, estén terminadas y funcionen con el servidor, se seguirán unas determinadas pautas para comprobar que la aplicación funciona correctamente en todos ellos.  
+Unido a todo esto, es imprescindible el uso de ambas aplicaciones por personas ajenas al proyecto, recogiendo opiniones sobre la usabilidad del sistema y detectar posibles errores. 
 
 \newpage
 
@@ -194,6 +217,22 @@ Para la primera iteración, se planea permitir la creación, edición y borrado 
 Para la segunda iteración se finalizarán los requisitos que, por falta de tiempo, no pudieron ser completados en la primera y se añadirán funcionalidades al sistema. Estas funcionalidades son: añadir canciones a la lista de reproducción de un usuario, permitir información adicional en los perfiles de usuario (como puede ser una foto de perfil, una descripción, etc.), además de poder seguirse entre dos usuarios. Se permitirá la búsqueda y filtrado de determinadas canciones y/o álbumes por unos determinados parámetros, al igual que utilizar un ecualizador en la aplicación web con el uso de \textit{banners}.
 
 \includepdf[pages=1-2]{calendar.pdf}
+\newpage
+
+\subsubsection{Diagramas de Gantt de la aplicación}
+\begin{figure}[H]
+	\hspace*{-3.7cm}
+	\centering{\includegraphics[scale=0.61]{Gantt_app.png}}
+\end{figure}
+\begin{figure}[H]
+	\hspace*{-3.7cm}
+	\centering{\includegraphics[scale=0.61]{Gantt_web.png}}
+\end{figure}
+\begin{figure}[H]
+	\hspace*{-3.7cm}
+	\centering{\includegraphics[scale=0.61]{Gantt_back.png}}
+\end{figure}
+
 \newpage
 \section{Análisis y diseño del sistema}
 
@@ -296,12 +335,9 @@ Se exponen los siguientes requisitos no funcionales de la aplicación:
 		&  El sistema permitirá ser utilizar un diseño modular, un lenguaje fácil de entender, usar y mantener.\\ 
 		\hline
 		RNF2
-		&  La seguridad será fundamental a la hora de garantizar la confidencialidad y autentificación de las canciones, así como para cumplir determinados aspectos de la LOPD y los derechos de los cantautores.\\ 
+		&  El cliente tendrá el desarrollo móvil en formato \textit{Android} e \textit{iOS}.\\ 
 		\hline
 		RNF3
-		&  El cliente tendrá el desarrollo móvil en formato Android e iOS.\\ 
-		\hline
-		RNF4
 		& El sistema permite almacenar canciones y podcasts en formato \textit{.mp3}, \textit{.WAV} y \textit{.OGG}. \\
 	\end{tabular}
 \end{table}

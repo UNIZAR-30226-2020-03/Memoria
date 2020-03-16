@@ -5,12 +5,13 @@
 \contentsline {subsection}{\numberline {2.1}Procesos}{6}%
 \contentsline {subsubsection}{\numberline {2.1.1}Procesos de inicio del proyecto}{6}%
 \contentsline {subsubsection}{\numberline {2.1.2}Procesos de ejecución y control del proyecto}{6}%
-\contentsline {subsubsection}{\numberline {2.1.3}Procesos técnicos}{7}%
-\contentsline {subsection}{\numberline {2.2}Planes}{8}%
-\contentsline {subsubsection}{\numberline {2.2.1}Plan de gestión de configuraciones}{8}%
-\contentsline {subsubsection}{\numberline {2.2.2}Plan de construcción y despliegue del software}{9}%
-\contentsline {subsubsection}{\numberline {2.2.3}Plan de aseguramiento de la calidad}{9}%
-\contentsline {subsubsection}{\numberline {2.2.4}Calendario del proyecto y división del trabajo}{10}%
-\contentsline {section}{\numberline {3}Análisis y diseño del sistema}{13}%
-\contentsline {subsection}{\numberline {3.1}Análisis de requisitos}{13}%
-\contentsline {subsection}{\numberline {3.2}Diseño del sistema}{15}%
+\contentsline {subsubsection}{\numberline {2.1.3}Procesos técnicos}{8}%
+\contentsline {subsection}{\numberline {2.2}Planes}{9}%
+\contentsline {subsubsection}{\numberline {2.2.1}Plan de gestión de configuraciones}{9}%
+\contentsline {subsubsection}{\numberline {2.2.2}Plan de construcción y despliegue del software}{10}%
+\contentsline {subsubsection}{\numberline {2.2.3}Plan de aseguramiento de la calidad}{10}%
+\contentsline {subsubsection}{\numberline {2.2.4}Calendario del proyecto y división del trabajo}{11}%
+\contentsline {subsubsection}{\numberline {2.2.5}Diagramas de Gantt de la aplicación}{14}%
+\contentsline {section}{\numberline {3}Análisis y diseño del sistema}{16}%
+\contentsline {subsection}{\numberline {3.1}Análisis de requisitos}{16}%
+\contentsline {subsection}{\numberline {3.2}Diseño del sistema}{18}%
