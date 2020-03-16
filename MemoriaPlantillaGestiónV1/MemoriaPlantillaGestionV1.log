@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.3.9)  16 MAR 2020 11:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.3.9)  16 MAR 2020 18:16
 entering extended mode
 **./MemoriaPlantillaGestionV1.tex
 (MemoriaPlantillaGestionV1.tex
@@ -462,169 +462,174 @@ File: logoDefinitivo3.png Graphic file (type png)
 Package pdftex.def Info: logoDefinitivo3.png  used on input line 191.
 (pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
  [9 <./conf1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 193--201
+Underfull \hbox (badness 10000) in paragraph at lines 193--203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--201
+Underfull \hbox (badness 10000) in paragraph at lines 193--203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--209
+Underfull \hbox (badness 10000) in paragraph at lines 193--203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--221
 
  []
 
 File: logoEina.png Graphic file (type png)
 <use logoEina.png>
-Package pdftex.def Info: logoEina.png  used on input line 210.
+Package pdftex.def Info: logoEina.png  used on input line 221.
 (pdftex.def)             Requested size: 113.81102pt x 32.43407pt.
 File: logoDefinitivo3.png Graphic file (type png)
 <use logoDefinitivo3.png>
-Package pdftex.def Info: logoDefinitivo3.png  used on input line 210.
+Package pdftex.def Info: logoDefinitivo3.png  used on input line 221.
 (pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
 [10]
-<calendar.pdf, id=53, 845.0471pt x 597.50829pt>
+<calendar.pdf, id=50, 845.0471pt x 597.50829pt>
 File: calendar.pdf Graphic file (type pdf)
 <use calendar.pdf>
-Package pdftex.def Info: calendar.pdf  used on input line 219.
+Package pdftex.def Info: calendar.pdf  used on input line 229.
 (pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
 File: calendar.pdf Graphic file (type pdf)
 <use calendar.pdf>
-Package pdftex.def Info: calendar.pdf  used on input line 219.
+Package pdftex.def Info: calendar.pdf  used on input line 229.
 (pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
-<calendar.pdf, id=56, page=1, 845.0471pt x 597.50829pt>
+<calendar.pdf, id=53, page=1, 845.0471pt x 597.50829pt>
 File: calendar.pdf Graphic file (type pdf)
 <use calendar.pdf, page 1>
-Package pdftex.def Info: calendar.pdf , page1 used on input line 219.
+Package pdftex.def Info: calendar.pdf , page1 used on input line 229.
 (pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
 File: calendar.pdf Graphic file (type pdf)
 <use calendar.pdf, page 1>
-Package pdftex.def Info: calendar.pdf , page1 used on input line 219.
+Package pdftex.def Info: calendar.pdf , page1 used on input line 229.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: logoEina.png Graphic file (type png)
 <use logoEina.png>
-Package pdftex.def Info: logoEina.png  used on input line 219.
+Package pdftex.def Info: logoEina.png  used on input line 229.
 (pdftex.def)             Requested size: 113.81102pt x 32.43407pt.
 File: logoDefinitivo3.png Graphic file (type png)
 <use logoDefinitivo3.png>
-Package pdftex.def Info: logoDefinitivo3.png  used on input line 219.
+Package pdftex.def Info: logoDefinitivo3.png  used on input line 229.
 (pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
  [11]
 File: calendar.pdf Graphic file (type pdf)
 <use calendar.pdf, page 1>
-Package pdftex.def Info: calendar.pdf , page1 used on input line 219.
+Package pdftex.def Info: calendar.pdf , page1 used on input line 229.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: calendar.pdf Graphic file (type pdf)
 <use calendar.pdf, page 1>
-Package pdftex.def Info: calendar.pdf , page1 used on input line 219.
+Package pdftex.def Info: calendar.pdf , page1 used on input line 229.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: calendar.pdf Graphic file (type pdf)
 <use calendar.pdf, page 1>
-Package pdftex.def Info: calendar.pdf , page1 used on input line 219.
+Package pdftex.def Info: calendar.pdf , page1 used on input line 229.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
  [12 <./calendar.pdf>]
 <calendar.pdf, id=74, page=2, 845.0471pt x 597.50829pt>
 File: calendar.pdf Graphic file (type pdf)
 <use calendar.pdf, page 2>
-Package pdftex.def Info: calendar.pdf , page2 used on input line 219.
+Package pdftex.def Info: calendar.pdf , page2 used on input line 229.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: calendar.pdf Graphic file (type pdf)
 <use calendar.pdf, page 2>
-Package pdftex.def Info: calendar.pdf , page2 used on input line 219.
+Package pdftex.def Info: calendar.pdf , page2 used on input line 229.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
 File: calendar.pdf Graphic file (type pdf)
 <use calendar.pdf, page 2>
-Package pdftex.def Info: calendar.pdf , page2 used on input line 219.
+Package pdftex.def Info: calendar.pdf , page2 used on input line 229.
 (pdftex.def)             Requested size: 614.32619pt x 434.37221pt.
  [13 <./calendar.pdf>]
 <Gantt_app.png, id=79, 864.98157pt x 393.72093pt>
 File: Gantt_app.png Graphic file (type png)
 <use Gantt_app.png>
-Package pdftex.def Info: Gantt_app.png  used on input line 225.
+Package pdftex.def Info: Gantt_app.png  used on input line 235.
 (pdftex.def)             Requested size: 527.63799pt x 240.16942pt.
 
-Overfull \hbox (79.5851pt too wide) in paragraph at lines 224--226
+Overfull \hbox (79.5851pt too wide) in paragraph at lines 234--236
  []|  [] 
  []
 
 <Gantt_web.png, id=80, 858.20625pt x 375.20175pt>
 File: Gantt_web.png Graphic file (type png)
 <use Gantt_web.png>
-Package pdftex.def Info: Gantt_web.png  used on input line 229.
+Package pdftex.def Info: Gantt_web.png  used on input line 239.
 (pdftex.def)             Requested size: 523.50505pt x 228.87273pt.
 
-Overfull \hbox (75.45216pt too wide) in paragraph at lines 228--230
+Overfull \hbox (75.45216pt too wide) in paragraph at lines 238--240
  []|  [] 
  []
 
 <Gantt_back.png, id=81, 872.66025pt x 369.7815pt>
 File: Gantt_back.png Graphic file (type png)
 <use Gantt_back.png>
-Package pdftex.def Info: Gantt_back.png  used on input line 233.
+Package pdftex.def Info: Gantt_back.png  used on input line 243.
 (pdftex.def)             Requested size: 532.32198pt x 225.56638pt.
 
-Overfull \hbox (84.26909pt too wide) in paragraph at lines 232--234
+Overfull \hbox (84.26909pt too wide) in paragraph at lines 242--244
  []|  [] 
  []
 
 File: logoEina.png Graphic file (type png)
 <use logoEina.png>
-Package pdftex.def Info: logoEina.png  used on input line 235.
+Package pdftex.def Info: logoEina.png  used on input line 245.
 (pdftex.def)             Requested size: 113.81102pt x 32.43407pt.
 File: logoDefinitivo3.png Graphic file (type png)
 <use logoDefinitivo3.png>
-Package pdftex.def Info: logoDefinitivo3.png  used on input line 235.
+Package pdftex.def Info: logoDefinitivo3.png  used on input line 245.
 (pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
 [14 <./Gantt_app.png> <./Gantt_web.png>]
 File: logoEina.png Graphic file (type png)
 <use logoEina.png>
-Package pdftex.def Info: logoEina.png  used on input line 236.
+Package pdftex.def Info: logoEina.png  used on input line 246.
 (pdftex.def)             Requested size: 113.81102pt x 32.43407pt.
 File: logoDefinitivo3.png Graphic file (type png)
 <use logoDefinitivo3.png>
-Package pdftex.def Info: logoDefinitivo3.png  used on input line 236.
+Package pdftex.def Info: logoDefinitivo3.png  used on input line 246.
 (pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
  [15 <./Gantt_back.png>]
-Overfull \hbox (77.33858pt too wide) in paragraph at lines 242--298
+Overfull \hbox (77.33858pt too wide) in paragraph at lines 252--308
 [][] 
  []
 
 File: logoEina.png Graphic file (type png)
 <use logoEina.png>
-Package pdftex.def Info: logoEina.png  used on input line 299.
+Package pdftex.def Info: logoEina.png  used on input line 309.
 (pdftex.def)             Requested size: 113.81102pt x 32.43407pt.
 File: logoDefinitivo3.png Graphic file (type png)
 <use logoDefinitivo3.png>
-Package pdftex.def Info: logoDefinitivo3.png  used on input line 299.
+Package pdftex.def Info: logoDefinitivo3.png  used on input line 309.
 (pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
 [16]
-Overfull \hbox (77.33858pt too wide) in paragraph at lines 301--324
+Overfull \hbox (77.33858pt too wide) in paragraph at lines 311--334
 [][] 
  []
 
 
-Overfull \hbox (77.33858pt too wide) in paragraph at lines 328--343
+Overfull \hbox (77.33858pt too wide) in paragraph at lines 338--353
 [][] 
  []
 
 File: logoEina.png Graphic file (type png)
 <use logoEina.png>
-Package pdftex.def Info: logoEina.png  used on input line 344.
+Package pdftex.def Info: logoEina.png  used on input line 354.
 (pdftex.def)             Requested size: 113.81102pt x 32.43407pt.
 File: logoDefinitivo3.png Graphic file (type png)
 <use logoDefinitivo3.png>
-Package pdftex.def Info: logoDefinitivo3.png  used on input line 344.
+Package pdftex.def Info: logoDefinitivo3.png  used on input line 354.
 (pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
 [17]
 File: logoEina.png Graphic file (type png)
 <use logoEina.png>
-Package pdftex.def Info: logoEina.png  used on input line 348.
+Package pdftex.def Info: logoEina.png  used on input line 358.
 (pdftex.def)             Requested size: 113.81102pt x 32.43407pt.
 File: logoDefinitivo3.png Graphic file (type png)
 <use logoDefinitivo3.png>
-Package pdftex.def Info: logoDefinitivo3.png  used on input line 348.
+Package pdftex.def Info: logoDefinitivo3.png  used on input line 358.
 (pdftex.def)             Requested size: 99.58464pt x 32.20212pt.
  [18] (MemoriaPlantillaGestionV1.aux
 LaTeX Info: Redefining \. on input line 7.
@@ -637,7 +642,7 @@ Here is how much of TeX's memory you used:
  9196 multiletter control sequences out of 15000+200000
  12156 words of font info for 47 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 51i,18n,46p,724b,486s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,18n,46p,724b,488s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program Files/MiKT
@@ -648,7 +653,7 @@ sfonts/cm/cmr7.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmr8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb
 ><D:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><D:/Program F
 iles/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on MemoriaPlantillaGestionV1.pdf (18 pages, 566505 bytes).
+Output written on MemoriaPlantillaGestionV1.pdf (18 pages, 569108 bytes).
 PDF statistics:
  131 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

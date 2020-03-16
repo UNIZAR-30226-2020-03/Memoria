@@ -9,7 +9,7 @@
 \contentsline {subsection}{\numberline {2.2}Planes}{9}%
 \contentsline {subsubsection}{\numberline {2.2.1}Plan de gestión de configuraciones}{9}%
 \contentsline {subsubsection}{\numberline {2.2.2}Plan de construcción y despliegue del software}{10}%
-\contentsline {subsubsection}{\numberline {2.2.3}Plan de aseguramiento de la calidad}{10}%
+\contentsline {subsubsection}{\numberline {2.2.3}Plan de aseguramiento de la calidad}{11}%
 \contentsline {subsubsection}{\numberline {2.2.4}Calendario del proyecto y división del trabajo}{11}%
 \contentsline {subsubsection}{\numberline {2.2.5}Diagramas de Gantt de la aplicación}{14}%
 \contentsline {section}{\numberline {3}Análisis y diseño del sistema}{16}%
