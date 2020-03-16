@@ -354,7 +354,37 @@ Se exponen los siguientes requisitos no funcionales de la aplicación:
 \newpage
 
 \subsection{Diseño del sistema}
-
+Un aspecto esencial que se ha considerado desde el principio ha sido la realización de la base de datos relacional en PostgreSQL, siguiendo el siguiente esquema: 
+\begin{figure}[H]
+	\hspace*{-2cm}
+	\centering{\includegraphics[scale=0.24]{DB_decision.jpg}}
+\end{figure}
+Fue elegido este gestor de datos porque, en comparación con los demás, permite de una manera simple almacenar los datos de las canciones, unido a una alta fiabilidad.
+\newpage
+El modelo \textit{Entidad - Relación} que se ha llevado a cabo ha sido el planteado a continuación, implementado en el back-end con esta estructura:
+\begin{figure}[H]
+	\hspace*{-3.9cm}
+	\centering{\includegraphics[scale=0.35]{ModeloER.jpg}}
+\end{figure}
+El diseño del back-end será \textit{REST} para todas las consultas y peticiones relacionadas con la aplicación, excepto la parte de las canciones en streaming. Para ello, se usará la siguiente tecnología CRUD: \textit{Spring Content(Cloud-Native Content Services for Spring)}. \\
+\hfill \break
+Esto es debido a que no hay que preocuparse de la implementación del código del controlador del reproductor para que soporte \textit{request} parciales (rangos de bits).\hfill \break
+\textit{Spring Content} nos permite crear un servicio \textit{REST-based mp3}  que soporta streaming. Además, también aporta completamente la funcionalidad \textit{CRUD} (\textit{Create == POST}, \textit{Read == GET} (incluyendo rangos de bits), \textit{Update == PUT}, \textit{Delete == DELETE}) en caso de ser necesaria.
+\begin{figure}[H]
+	\centering{\includegraphics[scale=0.8]{upbeat_streaming.png}}
+\end{figure}
+\newpage
+Por todo esto, la estructura del proyecto con la parte front-end incluida será lo siguiente:
+\begin{figure}[H]
+	\hspace*{-2cm}
+	\centering{\includegraphics[scale=0.42]{EstructuraProyecto.png}}
+\end{figure}
+A la izquierda se denotan las tecnologías usadas para cada parte junto a la función que realiza cada una. \\
+La manera de comunicarse entre APIs sigue este patrón:
+\begin{figure}[H]
+	\hspace*{-3cm}
+	\centering{\includegraphics[scale=0.42]{comunication_vista.jpeg}}
+\end{figure}
 \end{document}
 
 
