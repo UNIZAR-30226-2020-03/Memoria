@@ -139,7 +139,7 @@ De manera similar, para la realización de la aplicación web, solamente es nece
 \hfill \break
 Se ha elegido un tamaño de 500 MB en la BD, suficiente para llevar a cabo pruebas con diversas canciones y configuraciones.\\
 \hfill \break
-En la realización del proyecto se ha compilado y ejecutado toda la parte de backend sobre un portátil \textit{MSI} con la siguientes características:
+En la realización del proyecto se ha compilado y ejecutado toda la parte de back-end sobre un portátil \textit{MSI} con la siguientes características:
 \begin{itemize}
 	\item Windows 10 Pro
 	\item Latest 6th Gen. Intel® Core™ i7 processor
@@ -149,7 +149,7 @@ En la realización del proyecto se ha compilado y ejecutado toda la parte de bac
 	\item USB 3.0 Type-C reversible plug
 	\item 8 GB RAM
 \end{itemize}
-En la realización del proyecto se ha compilado y ejecutado la parte de frontend móvil sobre un portátil \textit{Lenovo} con la siguientes características:
+En la realización del proyecto se ha compilado y ejecutado la parte de front-end móvil sobre un portátil \textit{Lenovo} con la siguientes características:
 \begin{itemize}
 	\item Windows 10 Pro
 	\item Latest 5th Gen. Intel® Core™ i5 processor
@@ -157,7 +157,7 @@ En la realización del proyecto se ha compilado y ejecutado la parte de frontend
 	\item 120 GB SSD
 	\item 4 GB RAM
 \end{itemize}
-En la realización del proyecto se ha compilado y ejecutado la parte de frontend aplicación web sobre un portátil \textit{Acer} con la siguientes características:
+En la realización del proyecto se ha compilado y ejecutado la parte de front-end aplicación web sobre un portátil \textit{Acer} con la siguientes características:
 \begin{itemize}
 	\item Windows 10 Home
 	\item Latest 7th Gen. Intel® Core™ i3 processor
@@ -173,7 +173,7 @@ Los responsables de realizar la puesta en marcha serán los encargados de la par
 \hfill \break
 El repositorio que se creará con todos los archivos referentes al proyecto se encontrará en \textit{GitHub}, para que todos los integrantes del proyecto puedan acceder fácilmente a los archivos. Además, se usará el \textit{Issue Tracker} de \textit{GitHub} para la gestión de incidencias; el director del mismo se encargará de crear las incidencias principales, y cada uno de los encargados de cada parte las completarán en cada uno de sus ámbitos.\\
 \hfill \break
-El proyecto estará dividido en varios repositorios: uno específico para front-end, otro para back-end, y la memoria. Para conseguir que no se modifique el mismo fichero por dos personas al mismo tiempo y evitar problemas, cada equipo tendrá más sub-ramas de desarrollo, por ejemplo, una para cada miembro del equipo, que serán actualizadas con cambios no siempre funcionales y cuando sean más estables se volcarán a la rama de desarrollo principal. 
+El proyecto estará dividido en varios repositorios: uno específico para front-end, otro para back-end, y la memoria. Para conseguir que no se modifique el mismo fichero por dos personas al mismo tiempo y evitar problemas, cada equipo tendrá más subramas de desarrollo, por ejemplo, una para cada miembro del equipo, que serán actualizadas con cambios no siempre funcionales y cuando sean más estables se volcarán a la rama de desarrollo principal. 
 \hfill \break
 En la rama principal de cada uno de los repositorios, sólo podrá haber una versión funcional del sistema, que antes de ser subida será sometida a diferentes test automáticos, entre los que se incluirán test para comprobar la estabilidad del sistema (pruebas de sobrecarga) y test que revisarán las acciones disponibles para comprobar los requisitos que se han resuelto, además de ser testeado por varios miembros del equipo. 
 \hfill \break
@@ -182,7 +182,6 @@ Para que lo desarrollado en cada uno de estos repositorios pase al repositorio f
 Durante el desarrollo del proyecto puede haber problemas y disputas entre los miembros del equipo. Para tratar de resolverlos los coordinadores serán los primeros en mediar entre los miembros en disputa y, si hay alguna razón que haga imposible esta mediación, será el resto del equipo quien deberá votar en consecuencia. 
 \hfill \break
 Todos los componentes del equipo son capaces de modificar los ficheros de los repositorios, excepto en el de las versiones, el cual solo podrán subir archivos y modificarlos los líderes del front-end y el back-end.
-\newpage
 
 \subsubsection{Procesos técnicos}
 En primer lugar, en el front-end web se ha utilizado la herramienta \textit{Angular} que utiliza \textit{JavaScript}, \textit{HTML} y \textit{CSS}. Se han utilizado librerías ya predefinidas en la guía de estilo \textit{Angular Material} para los elementos de diseño, como por ejemplo \textit{MatForms}, \textit{MatIcons} y \textit{HttpClient}. Para desplegar y probar la aplicación hemos empleado el navegador \textit{Google Chrome}.
@@ -246,18 +245,18 @@ Para la parte móvil, el uso de \textit{Android Studio} y \textit{Gradle} permit
 \hfill \break
 Para comprobar cada una de las funcionalidades que se van añadiendo, se realizan de manera manual, primero en los ordenadores personales de cada integrante y luego integrándolo con el servidor de producción. 
 Los módulos son independientes entre ellos y se comunican principalmente mediante peticiones \textit{HTTP}, esto permite simular las peticiones antes de probarlo con el entorno real de producción. 
-Este servidor de producción será \textit{Heroku}, pero aún no se ha implementado todo para poder ir subiendo las diferentes versiones de manera correcta. \\
+Este servidor de producción es \textit{Heroku}. \\
 \hfill \break
 En la parte referente al back-end, la construcción y despliegue se realizan de la siguiente manera:
 \begin{enumerate}
-	\item Se lanza la base de datos \textit{upbeat} en \textit{PostgreSQL} (de momento únicamente en local) con usuario: \textit{postgres} y contraseña: \textit{root} en el puerto \textit{5432}.
+	\item Se lanza la base de datos \textit{upbeat} de \textit{PostgreSQL} con usuario: \textit{ekngbyjaefrukg} y contraseña: \textit{805e38675224c7f5e8d95d472af06a341b6e3f1de59980b2\\6eae0b16b22eb4a6} en el puerto \textit{5432}.
+	\item Esto se debe a que la aplicación se despliega automáticamente en Heroku.
 	\item Establecer puerto en las propiedades del proyecto \textit{Spring} para las conexiones \textit{HTTP} (por defecto se usará el \textit{8080} pero podría llegar a cambiarse en caso de puertos ya ocupados/escuchando).
 	\item Compilar el proyecto utilizando \textit{Maven}, el cual facilita las dependencias de nuestro proyecto asegurándose que todo quede compilado con las mismas dependencias y funcione correctamente.
 	\item Lanzar el proyecto de \textit{Spring} (\textit{Run})*.
 	\item Para la comprobación del correcto funcionamiento de la parte referente al back-end, antes de conectar con los respectivos proyectos de \textit{Angular} y \textit{Flutter} (front-end) se utilizará la aplicación \textit{Postman}. Esta herramienta nos permite hacer peticiones \textit{GET} y \textit{POST} y poder observar su resultado.
+	\item En el momento que se produce una subida a la rama master, se despliega automáticamente en \textit{Heroku}, por lo que las parte front-end puede hacer peticiones sin tener que correr este back-end en local.
 \end{enumerate}
-*En caso de encontrar errores, notificar al responsable de dicha parte o, si es posible, solucionar errores cuando sean mínimos y se sepa cómo corregirlos.
-Para el despliegue final del servidor y la base de datos en la entrega final se buscará utilizar plataformas como \textit{Heroku}. 
 
 
 \subsubsection{Plan de aseguramiento de la calidad}
@@ -405,11 +404,13 @@ Se exponen los siguientes requisitos no funcionales de la aplicación:
 \newpage
 
 \subsection{Diseño del sistema}
-Un aspecto esencial que se ha considerado desde el principio ha sido la realización de la base de datos relacional en PostgreSQL, siguiendo el siguiente esquema: 
-\begin{figure}[H]
-	\hspace*{-2cm}
-	\centering{\includegraphics[scale=0.24]{DB_decision.jpg}}
-\end{figure}
+Un aspecto esencial que se ha considerado desde el principio ha sido la realización de la base de datos relacional en \textit{PostgreSQL}, siguiendo las siguientes razones:
+\begin{itemize}
+	\item Brinda opciones más complejas que otros gestores, ya que suele estar orientado para bases de datos más grandes y con consultas más largas. Algunas de sus funciones, como la de unir tablas, hacen que sea mejor valorado por algunos desarrolladores frente a su competencia.
+	\item Código \textit{OpenSource}.
+	\item Soporta todas las operaciones con \textit{Strings} como concatenar \textit{sub stringing}, búsqueda \textit{regex}, \textit{matching} y \textit{splitting}, búsqueda de texto completo y transformación de caracteres entre otros.
+	\item Permite el uso de \textit{JSON} Y \textit{JSONB} en su totalidad, incluyendo varias funciones para el manejo de los mismos.
+\end{itemize}
 Fue elegido este gestor de datos porque, en comparación con los demás, permite de una manera simple almacenar los datos de las canciones, unido a una alta fiabilidad.
 \newpage
 El modelo \textit{Entidad - Relación} que se ha llevado a cabo ha sido el planteado a continuación, implementado en el back-end con esta estructura:
@@ -427,10 +428,11 @@ Esto es debido a que no hay que preocuparse de la implementación del código de
 \newpage
 Por todo esto, la estructura del proyecto con la parte front-end incluida será lo siguiente:
 \begin{figure}[H]
-	\hspace*{-2cm}
-	\centering{\includegraphics[scale=0.42]{EstructuraProyecto.png}}
+	\hspace*{-1.5cm}
+	\centering{\includegraphics[scale=0.82]{EstructuraProyecto.png}}
 \end{figure}
 A la izquierda se denotan las tecnologías usadas para cada parte junto a la función que realiza cada una. \\
+\newpage
 La manera de comunicarse entre APIs sigue este patrón:
 \begin{figure}[H]
 	\hspace*{-2.5cm}
@@ -450,20 +452,26 @@ Por último, para la elección de las tecnologías usadas, se tuvo principalment
 El equipo de \textit{Flutter} ha divido el trabajo hecho hasta ahora en dos partes. Álvaro se ha dedicado a realizar la parte de registro y login de usuarios, mientras que José Félix se ha dedicado a hacer las pantallas de canciones, playlists, álbumes y podcasts. La comunicación dentro del equipo se ha realizado a través de los mensajes privados de \textit{Whatsapp} ya que solo cuenta con 2 integrantes.\\
 \hfill \break
 Para controlar el trabajo realizado se ha utilizado el \textit{Issue Tracker} de \textit{GitHub}, aunque también nos hemos comunicado por \textit{WhatsApp} para tener una comunicación más activa.
-A día de hoy, vamos algo por detrás del plan inicial ya que no esta implementado el reproductor con la base de datos, solo se ha implementado por ahora la parte frontend sin funcionalidad. Esto es debido a que la parte del backend de las canciones aún no esta con funcionalidad completa.\\
+A día de hoy, vamos algo por detrás del plan inicial ya que no esta implementado el reproductor con la base de datos, solo se ha implementado por ahora la parte front-end sin funcionalidad. Esto es debido a que la parte del back-end de las canciones aún no esta con funcionalidad completa.\\
 \hfill \break
 No se ha producido ningún cambio en las tecnologías empleadas.
 No se han producido problemas con las integraciones ni versiones del código.
-Por ahora las únicas pruebas realizadas han sido comprobar que el frontend se comunica correctamente con el backend, realizando las consultas e inserciones en la base correctamente.\\
+Por ahora las únicas pruebas realizadas han sido comprobar que el front-end se comunica correctamente con el back-end, realizando las consultas e inserciones en la base correctamente.\\
 \hfill \break
-En la parte del frontend web se ha tenido que cambiar la distribución de trabajo, informándonos simultáneamente la mayor parte del tiempo porque no teníamos experiencia previa y había errores de conexión con el backend que se sabía solventar; todo esto ha llevado mucho tiempo entre leer documentación y realización de pruebas. También cabe reconocer que si se hubiera puesto en contacto antes con los miembros del backend se habría solventado mucho antes porque eran errores mínimos.
+En la parte del front-end web se ha tenido que cambiar la distribución de trabajo, informándonos simultáneamente la mayor parte del tiempo porque no teníamos experiencia previa y había errores de conexión con el back-end que se sabía solventar; todo esto ha llevado mucho tiempo entre leer documentación y realización de pruebas. También cabe reconocer que si se hubiera puesto en contacto antes con los miembros del back-end se habría solventado mucho antes porque eran errores mínimos.\\
+\hfill \break
+En lo que respecta al back-end, se ha trabajado principalmente por videollamada, trabajando sobre el mismo o diferentes temas, pero cooperando y preguntando dudas en caso de que algún miembro se quede atascado. Previo a esto, han sido necesarias varias horas de formación ya que en la mayoría de los casos no se conocían ni la forma ni el entorno de trabajo. 
+Este factor ha hecho que este trabajo haya supuesto un esfuerzo mayor del que podría haber requerido realmente con respecto a las horas.
+Además, se intentado y se ha conseguido desplegar la aplicación en la plataforma \textit{Heroku} para que, cuando se produzca un commit desde la rama master, se suba automáticamente el proyecto y todos los miembros (también desde el front-end) puedan hacer peticiones a las \textit{URLs} previamente acordadas.
 \subsection{Cierre del proyecto}
 Los tiempos en las estimaciones iniciales han sido ligeramente más cortos que los utilizados realmente, ya que aunque también estemos utilizando el mismo lenguaje en la asignatura de Arquitectura Software ninguno de los dos lo habíamos utilizado anteriormente.\\
 \hfill \break
 Las lecciones aprendidas más importantes han sido tanto, tanto aprender como utilizar \textit{Flutter} y programar en \textit{Dart}. Además, hemos adquirido conocimientos sobre cómo funcionan las cabeceras \textit{HTTP} para poder hacer peticiones al back.\\
 Como se ha indicado anteriormente Álvaro se ha dedicado a hacer la parte de registro y login de usuarios, llevándole unas 16 horas, y José Félix ha hecho las pantallas de canciones, playlists, álbumes y podcast, con un total de 12 horas.\\
 \hfill \break
-En el frontend web se tiene en cuenta un pequeño retraso enfocado en el diseño de algunos módulos de la web, pero en estas semanas se espera solventar y ponerse al día con el calendario establecido al principio. De igual manera, se supone que las variaciones serían mínimas. Junto a todo esto, el proyecto ha supuesto bastante esfuerzo al principio, y muchas horas de documentación y tutoriales porque no se poseía experiencia suficiente con Angular.
+En el front-end web se tiene en cuenta un pequeño retraso enfocado en el diseño de algunos módulos de la web, pero en estas semanas se espera solventar y ponerse al día con el calendario establecido al principio. De igual manera, se supone que las variaciones serían mínimas. Junto a todo esto, el proyecto ha supuesto bastante esfuerzo al principio, y muchas horas de documentación y tutoriales porque no se poseía experiencia suficiente con Angular.\\
+\hfill \break
+Por último, en la parte del back-end, se ha completado la parte del registro e inicio de sesión de los usuarios, se ha conseguido desplegar automáticamente y poder estar accesible para todos los miembros el proyecto, y se ha investigado y se está probando el almacenamiento y la reproducción de canciones, así como el almacenamiento de imágenes. La correspondencia con el calendario no es exacta, ya que se ha priorizado el despliegue para una mayor comodidad de todos los miembros del equipo pero no se ha completado aún (aunque está en proceso) como se había definido previamente el almacenamiento y la reproducción de las canciones.
 \end{document}
 
 
