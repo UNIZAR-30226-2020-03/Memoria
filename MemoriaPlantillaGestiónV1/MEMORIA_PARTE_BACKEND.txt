@@ -1,0 +1,8 @@
+En lo que respecta al back-end, se ha trabajado principalmente por videollamada, trabajando sobre el mismo o diferentes temas, pero cooperando y preguntando dudas en caso de que algún miembro se quede atascado. Previo a esto, han sido necesarias varias horas de formación ya que en la mayoría de los casos no se conocían ni la forma ni el entorno de trabajo. Este factor ha hecho que este trabajo haya supuesto un esfuerzo mayor del que podría haber requerido realmente con respecto a las horas.
+Además, se intentado y se ha conseguido desplegar la aplicación en la plataforma Heroku para que, cuando se produzca un commit desde la rama “master”, se suba automáticamente el proyecto y todos los miembros (también desde el front-end) puedan hacer peticiones a las URLs previamente acordadas.
+
+
+
+
+
+En la parte del back-end, se ha completado la parte del registro e inicio de sesión de usuarios, se ha conseguido desplegar automáticamente y poder estar accesible para todos los miembros el proyecto, y se ha investigado y se está probando el almacenamiento y la reproducción de canciones, así como el almacenamiento de imágenes. La correspondencia con el calendario no es exacta, ya que se ha priorizado el despliegue para una mayor comodidad de todos los miembros del equipo pero no se ha completado aún (aunque está en proceso) como se había definido previamente el almacenamiento y la reproducción de las canciones.
