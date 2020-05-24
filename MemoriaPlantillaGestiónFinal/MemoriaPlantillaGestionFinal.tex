@@ -313,46 +313,45 @@ Se exponen los siguientes requisitos funcionales de la aplicación:
 		& Los clientes podrán ser usuarios normales o artistas. \\ 
 		\hline
 		RF3
-		& Los clientes se registrarán mediante usuario y contraseña. \\ 
+		& Un cliente se compone de un nombre único, nombre personal y apellidos, un correo electrónico, una contraseña para acceder a la aplicación y una foto de perfil. \\ 
 		\hline
 		RF4
-		& Un usuario es un cliente registrado que puede acceder a las funciones de la aplicación como escuchar canciones/podcasts, crear y seguir listas de reproducción, seguir a otros usuarios, escuchar álbumes y ver las canciones subidas por los artistas. \\ 
+		& Los clientes accederán al sistema mediante una aplicación móvil o una aplicación web, a través de su correo electrónico y contraseña. \\ 
 		\hline
 		RF5
-		& Un artista es un cliente registrado que puede realizar las mismas funciones que un usuario, además de crear álbumes y subir canciones. Crear un álbum consiste en la creación de un grupo de canciones que pertenecen al mismo artista. \\ 
+		& El sistema permite que los clientes modifiquen los datos de su perfil, es decir, su nombre, correo, contraseña y foto de perfil. \\ 
 		\hline
 		RF6
-		& Un cliente se compone de un nombre único, nombre personal y apellidos, un correo electrónico, una contraseña para acceder a la aplicación, una foto de perfil y las redes sociales que posee (si quiere añadirlas de forma opcional). \\ 
+		& Un usuario es un cliente registrado que puede acceder a las funciones de la aplicación como escuchar canciones/podcasts, crear y seguir listas de reproducción, seguir a otros usuarios, escuchar álbumes y ver las canciones subidas por los artistas.  \\ 
 		\hline
 		RF7
-		& El sistema permite que los clientes modifiquen los datos de su perfil, es decir, su nombre, correo, contraseña, foto de perfil e información de las redes sociales. \\ 
+		& Un artista es un cliente registrado que puede realizar las mismas funciones que un usuario, además de crear álbumes y subir canciones/podcasts. Solo los artistas puedan subir canciones/podcasts. \\ 
 		\hline
 		RF8
-		& Los clientes accederán a la aplicación mediante una aplicación móvil o una aplicación web. \\ 
+		&
+		Una canción se compone de un título, un audio, artista/s que la han creado, género de la canción, país de la canción y veces que ha sido reproducida.\\
 		\hline
 		RF9
-		& El sistema permite reproducir y pausar una canción y/o podcasts. También permite saltar a la siguiente (si la hubiera), retroceder a la anterior, y elegir un bucle de la misma o reproducir aleatoriamente varias canciones y/o podcasts. \\ 
+		&
+		Un álbum consiste en la creación de un grupo de canciones que pertenecen al mismo artista. Este posee un título, descripción y una portada.\\
 		\hline
 		RF10
-		& Una canción se compone de un título, un audio, artista/s que la han creado, género de la canción, país de la canción y veces que ha sido reproducida. \\ 
+		& El sistema permite reproducir y pausar una canción y/o podcasts. También permite saltar a la siguiente (si la hubiera), retroceder a la anterior, y elegir un bucle de la misma o reproducir aleatoriamente varias canciones y/o podcasts. \\ 
 		\hline
 		RF11
 		& Una lista de reproducción es una lista de canciones generadas por un cliente. \\ 
 		\hline
 		RF12
-		& El sistema permite que un cliente cree y borren listas de reproducción creados por ellos mismos, las cuales serán públicas. \\ 
+		& El sistema permite que un cliente cree y borre listas de reproducción creadas por ellos mismos, las cuales serán públicas. \\ 
 		\hline
 		RF13
-		& El sistema permite que los clientes añadan canciones a las listas de reproducción creadas por ellos mismos. \\ 
+		& El sistema permite que los clientes añadan o borren canciones a las listas de reproducción creadas por ellos mismos. \\ 
 		\hline
 		RF14
 		& El sistema permite que los clientes sigan listas de reproducción creadas por otros usuarios. \\ 
 		\hline
 		RF15
-		& El sistema permite que solo los artistas puedan subir canciones. \\ 
-		\hline
-		RF16
-		& El sistema permite buscar una determinada canción por nombre o género, además de un artista por nombre. \\ 
+		& El sistema permite buscar una determinada canción por nombre o género, además de playlists, artistas y listas de reproducción (esto solo por nombre). \\
 		\hline
 	\end{tabular}
 \end{table}
@@ -365,19 +364,19 @@ Se exponen los siguientes requisitos funcionales de la aplicación:
 		\vspace{0.5mm} & \textbf{Descripción} \\ 
 		\hline
 		\hline
-		RF17
+		RF16
 		& Las búsquedas por palabras clave deberán al menos contener una palabra, de mínimo cuatro caracteres. \\ 
 		\hline 
-		RF18
+		RF17
 		& El sistema permite ver las canciones más populares de un país. \\ 
 		\hline 
-		RF19
+		RF18
 		& El sistema permite ver las canciones más populares de un artista. \\ 
 		\hline
-		RF20
+		RF19
 		& El sistema permitirá usar un equalizador al escuchar las canciones. \\ 
 		\hline
-		RF21
+		RF20
 		& El sistema permitirá el uso de \textit{banners} para ofrecer publicidad. \\ 
 		\hline
 	\end{tabular}
@@ -398,7 +397,11 @@ Se exponen los siguientes requisitos no funcionales de la aplicación:
 		&  El cliente tendrá el desarrollo móvil en formato \textit{Android} e \textit{iOS}.\\ 
 		\hline
 		RNF3
-		& El sistema permite almacenar canciones y podcasts en formato \textit{.mp3}, \textit{.WAV} y \textit{.OGG}. \\
+		& El sistema permite almacenar canciones y podcasts en formato \textit{.mp3}. \\
+		\hline
+		RNF4
+		& El sistema permite las fotos de perfil de los clientes en formato \textit{.png} y \textit{.jpg}. \\
+		\hline
 	\end{tabular}
 \end{table}
 \newpage
