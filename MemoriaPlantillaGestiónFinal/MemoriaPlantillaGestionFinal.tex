@@ -138,7 +138,7 @@ En el equipo de front-end de movil se va a utilizar \textit{Android Studio} como
 De manera similar, para la realización de la aplicación web, solamente es necesario tener \textit{Google Chrome} para hacerlo funcionar. El desarrollo se realizará sobre \textit{VSCode}.
 \hfill \break
 Se ha elegido un tamaño de 500 MB en la BD, suficiente para llevar a cabo pruebas con diversas canciones y configuraciones.\\
-\hfill \break
+\newpage
 En la realización del proyecto se ha compilado y ejecutado toda la parte de back-end sobre un portátil \textit{MSI} con la siguientes características:
 \begin{itemize}
 	\item Windows 10 Pro
@@ -165,7 +165,7 @@ En la realización del proyecto se ha compilado y ejecutado la parte de front-en
 	\item 240 GB SSD
 	\item 8 GB RAM
 \end{itemize}
-
+\newpage
 \subsubsection{Procesos de ejecución y control del proyecto}
 Las comunicaciones internas se llevarán a cabo mediante un grupo de \textit{WhatsApp} estimado para ello, para cualquier otra duda o comunicación entre componentes del equipo se hará de forma individual. La resolución de tareas será totalmente independiente y completa en el entorno de \textit{GitHub}.\\
 \hfill \break
@@ -184,7 +184,7 @@ Todos los componentes del equipo son capaces de modificar los ficheros de los re
 \subsubsection{Procesos técnicos}
 En primer lugar, en el front-end web se ha utilizado la herramienta \textit{Angular} que utiliza \textit{JavaScript}, \textit{HTML} y \textit{CSS}. Se han utilizado librerías ya predefinidas en la guía de estilo \textit{Angular Material} para los elementos de diseño, como por ejemplo \textit{MatForms}, \textit{MatIcons} y \textit{HttpClient}. Para desplegar y probar la aplicación hemos empleado el navegador \textit{Google Chrome}.
 Para usar esta herramienta ha sido necesario utilizar el manual de \textit{Angular} y algunos tutoriales online de \textit{JavaScript} y \textit{CSS}.\\
-\hfill \break
+\newpage
 Para el desarrollo del software de la parte del Front-end de la aplicación móvil se va a utilizar el entorno de \textit{Android Studio} haciendo uso de su integración con \textit{git} para facilitar el control de versiones y así, gestionar de forma uniforme entre los dos integrantes del grupo, el repositorio \textit{Flutter} en el que se irá desarrollando el software correspondiente a la aplicación móvil. Para las pruebas en el dispositivo de \textit{iOS} se utilizará el entorno de \textit{VSCode}.\\\\
 Para el proceso de prueba de funcionalidades de la aplicación móvil se seguirá el siguiente guión:
 	\begin{itemize}
@@ -227,7 +227,7 @@ Todas las semanas habrá una serie de tareas asociadas mediante el \textit{Issue
 El repositorio que se creará con todos los archivos referentes al proyecto se encontrará en \textit{GitHub}, para que todos los integrantes del proyecto puedan acceder fácilmente a los archivos. Además, se usará el \textit{Issue Tracker} de \textit{GitHub} para la gestión de incidencias; el director del mismo se encargará de crear las incidencias principales, y cada uno de los encargados de cada parte las completarán en cada uno de sus ámbitos.\\
 \hfill \break
 Además, cada semana el responsable de cada una de las partes revisará cuántas tareas se han realizado para la siguiente iteración, controlando si han sido completadas o no y cuánto tiempo de retraso acumula respecto a la planificación original.  Tras esta revisión, este responsable asignará las tareas de la semana a todos los miembros del equipo que puedan trabajar esa semana. \\
-\hfill \break
+\newpage
 Por último, la distribución del proyecto en el \textit{GitHub} son cuatro carpetas:
 \begin{itemize}
 	\item UNIZAR-30226-2020-03/Memoria
@@ -405,8 +405,25 @@ Se exponen los siguientes requisitos no funcionales de la aplicación:
 	\end{tabular}
 \end{table}
 \newpage
-
 \subsection{Diseño del sistema}
+\subsubsection{Estructura del proyecto}
+La estructura global de la aplicación \textit{UPBEAT} será la siguiente:
+\begin{figure}[H]
+	\hspace*{-1.5cm}
+	\centering{\includegraphics[scale=0.5]{EstructuraProyecto.png}}
+\end{figure}
+A la izquierda se denotan las tecnologías usadas para cada parte junto a la función que realiza cada una.
+\newpage
+La manera de comunicarse entre APIs sigue este patrón:
+\begin{figure}[H]
+	\centering{\includegraphics[scale=0.4]{EsquemaPS.png}}
+\end{figure}
+\subsubsection{Diseño del back-end de la aplicación}
+El diseño del back-end será \textit{REST} para todas las consultas y peticiones relacionadas con la aplicación, excepto la parte de las canciones en streaming. Para ello, se usará la siguiente tecnología CRUD: \textit{Spring Content(Cloud-Native Content Services for Spring)}. \\
+\hfill \break
+Esto es debido a que no hay que preocuparse de la implementación del código del controlador del reproductor para que soporte \textit{request} parciales (rangos de bits).\hfill \break
+\textit{Spring Content} nos permite crear un servicio \textit{REST-based mp3}  que soporta streaming. Además, también aporta completamente la funcionalidad \textit{CRUD} (\textit{Create == POST}, \textit{Read == GET} (incluyendo rangos de bits), \textit{Update == PUT}, \textit{Delete == DELETE}) en caso de ser necesaria.
+\subsubsection{Base de datos del proyecto}
 Un aspecto esencial que se ha considerado desde el principio ha sido la realización de la base de datos relacional en \textit{PostgreSQL}, siguiendo las siguientes razones:
 \begin{itemize}
 	\item Brinda opciones más complejas que otros gestores, ya que suele estar orientado para bases de datos más grandes y con consultas más largas. Algunas de sus funciones, como la de unir tablas, hacen que sea mejor valorado por algunos desarrolladores frente a su competencia.
@@ -421,26 +438,7 @@ El modelo \textit{Entidad - Relación} que se ha llevado a cabo ha sido el plant
 	\hspace*{-3.9cm}
 	\centering{\includegraphics[scale=0.35]{ModeloER.jpg}}
 \end{figure}
-El diseño del back-end será \textit{REST} para todas las consultas y peticiones relacionadas con la aplicación, excepto la parte de las canciones en streaming. Para ello, se usará la siguiente tecnología CRUD: \textit{Spring Content(Cloud-Native Content Services for Spring)}. \\
-\hfill \break
-Esto es debido a que no hay que preocuparse de la implementación del código del controlador del reproductor para que soporte \textit{request} parciales (rangos de bits).\hfill \break
-\textit{Spring Content} nos permite crear un servicio \textit{REST-based mp3}  que soporta streaming. Además, también aporta completamente la funcionalidad \textit{CRUD} (\textit{Create == POST}, \textit{Read == GET} (incluyendo rangos de bits), \textit{Update == PUT}, \textit{Delete == DELETE}) en caso de ser necesaria.
-\begin{figure}[H]
-	\centering{\includegraphics[scale=0.8]{upbeat_streaming.png}}
-\end{figure}
 \newpage
-Por todo esto, la estructura del proyecto con la parte front-end incluida será lo siguiente:
-\begin{figure}[H]
-	\hspace*{-1.5cm}
-	\centering{\includegraphics[scale=0.82]{EstructuraProyecto.png}}
-\end{figure}
-A la izquierda se denotan las tecnologías usadas para cada parte junto a la función que realiza cada una. \\
-\newpage
-La manera de comunicarse entre APIs sigue este patrón:
-\begin{figure}[H]
-	\hspace*{-2.5cm}
-	\centering{\includegraphics[scale=0.58]{EsquemaPS.png}}
-\end{figure}
 \section{Memoria del proyecto}
 \subsection{Inicio del proyecto}
 Al principio del proyecto, se creó el documento de propuesta técnica y económica. Este documento está disponible en la carpeta Memoria del \textit{GitHub} del proyecto, donde se explica con más detalle.\\
@@ -471,10 +469,14 @@ Los tiempos en las estimaciones iniciales han sido ligeramente más cortos que l
 \hfill \break
 Las lecciones aprendidas más importantes han sido tanto, tanto aprender como utilizar \textit{Flutter} y programar en \textit{Dart}. Además, hemos adquirido conocimientos sobre cómo funcionan las cabeceras \textit{HTTP} para poder hacer peticiones al back.\\
 Como se ha indicado anteriormente Álvaro se ha dedicado a hacer la parte de registro y login de usuarios, llevándole unas 16 horas, y José Félix ha hecho las pantallas de canciones, playlists, álbumes y podcast, con un total de 12 horas.\\
-\hfill \break
+\newpage
 En el front-end web se tiene en cuenta un pequeño retraso enfocado en el diseño de algunos módulos de la web, pero en estas semanas se espera solventar y ponerse al día con el calendario establecido al principio. De igual manera, se supone que las variaciones serían mínimas. Junto a todo esto, el proyecto ha supuesto bastante esfuerzo al principio, y muchas horas de documentación y tutoriales porque no se poseía experiencia suficiente con Angular.\\
 \hfill \break
 Por último, en la parte del back-end, se ha completado la parte del registro e inicio de sesión de los usuarios, se ha conseguido desplegar automáticamente y poder estar accesible para todos los miembros el proyecto, y se ha investigado y se está probando el almacenamiento y la reproducción de canciones, así como el almacenamiento de imágenes. La correspondencia con el calendario no es exacta, ya que se ha priorizado el despliegue para una mayor comodidad de todos los miembros del equipo pero no se ha completado aún (aunque está en proceso) como se había definido previamente el almacenamiento y la reproducción de las canciones.
+\newpage
+\section*{Anexo I. Actas de las reuniones}
+\section*{Anexo II. Esfuerzos realizados}
+\section*{Anexo III. Propuesta técnica y económica}
 \end{document}
 
 

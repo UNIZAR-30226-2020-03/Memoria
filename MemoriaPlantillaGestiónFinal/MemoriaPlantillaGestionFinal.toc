@@ -4,18 +4,21 @@
 \contentsline {section}{\numberline {2}Plan de gestión del proyecto}{6}%
 \contentsline {subsection}{\numberline {2.1}Procesos}{6}%
 \contentsline {subsubsection}{\numberline {2.1.1}Procesos de inicio del proyecto}{6}%
-\contentsline {subsubsection}{\numberline {2.1.2}Procesos de ejecución y control del proyecto}{7}%
+\contentsline {subsubsection}{\numberline {2.1.2}Procesos de ejecución y control del proyecto}{8}%
 \contentsline {subsubsection}{\numberline {2.1.3}Procesos técnicos}{8}%
-\contentsline {subsection}{\numberline {2.2}Planes}{9}%
-\contentsline {subsubsection}{\numberline {2.2.1}Plan de gestión de configuraciones}{9}%
-\contentsline {subsubsection}{\numberline {2.2.2}Plan de construcción y despliegue del software}{11}%
-\contentsline {subsubsection}{\numberline {2.2.3}Plan de aseguramiento de la calidad}{12}%
-\contentsline {subsubsection}{\numberline {2.2.4}Calendario del proyecto y división del trabajo}{12}%
-\contentsline {subsubsection}{\numberline {2.2.5}Diagramas de Gantt de la aplicación}{15}%
-\contentsline {section}{\numberline {3}Análisis y diseño del sistema}{17}%
-\contentsline {subsection}{\numberline {3.1}Análisis de requisitos}{17}%
-\contentsline {subsection}{\numberline {3.2}Diseño del sistema}{19}%
-\contentsline {section}{\numberline {4}Memoria del proyecto}{23}%
-\contentsline {subsection}{\numberline {4.1}Inicio del proyecto}{23}%
+\contentsline {subsection}{\numberline {2.2}Planes}{10}%
+\contentsline {subsubsection}{\numberline {2.2.1}Plan de gestión de configuraciones}{10}%
+\contentsline {subsubsection}{\numberline {2.2.2}Plan de construcción y despliegue del software}{12}%
+\contentsline {subsubsection}{\numberline {2.2.3}Plan de aseguramiento de la calidad}{13}%
+\contentsline {subsubsection}{\numberline {2.2.4}Calendario del proyecto y división del trabajo}{13}%
+\contentsline {subsubsection}{\numberline {2.2.5}Diagramas de Gantt de la aplicación}{16}%
+\contentsline {section}{\numberline {3}Análisis y diseño del sistema}{18}%
+\contentsline {subsection}{\numberline {3.1}Análisis de requisitos}{18}%
+\contentsline {subsection}{\numberline {3.2}Diseño del sistema}{20}%
+\contentsline {subsubsection}{\numberline {3.2.1}Estructura del proyecto}{20}%
+\contentsline {subsubsection}{\numberline {3.2.2}Diseño del back-end de la aplicación}{21}%
+\contentsline {subsubsection}{\numberline {3.2.3}Base de datos del proyecto}{21}%
+\contentsline {section}{\numberline {4}Memoria del proyecto}{24}%
+\contentsline {subsection}{\numberline {4.1}Inicio del proyecto}{24}%
 \contentsline {subsection}{\numberline {4.2}Ejecución y control del proyecto}{24}%
 \contentsline {subsection}{\numberline {4.3}Cierre del proyecto}{25}%
