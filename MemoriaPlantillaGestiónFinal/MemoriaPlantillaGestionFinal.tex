@@ -45,7 +45,7 @@ Sergio Torres Castillo \vspace{0.25cm}
 \\\\
 \includegraphics[scale=0.5]{logoUZ.png}\\
 }
-\date{16 de marzo de 2020}
+\date{8 de junio de 2020}
 
 % make the title area
 \maketitle
@@ -185,20 +185,9 @@ Todos los componentes del equipo son capaces de modificar los ficheros de los re
 En primer lugar, en el front-end web se ha utilizado la herramienta \textit{Angular} que utiliza \textit{JavaScript}, \textit{HTML} y \textit{CSS}. Se han utilizado librerías ya predefinidas en la guía de estilo \textit{Angular Material} para los elementos de diseño, como por ejemplo \textit{MatForms}, \textit{MatIcons} y \textit{HttpClient}. Para desplegar y probar la aplicación hemos empleado el navegador \textit{Google Chrome}.
 Para usar esta herramienta ha sido necesario utilizar el manual de \textit{Angular} y algunos tutoriales online de \textit{JavaScript} y \textit{CSS}.\\
 \newpage
-Para el desarrollo del software de la parte del Front-end de la aplicación móvil se va a utilizar el entorno de \textit{Android Studio} haciendo uso de su integración con \textit{git} para facilitar el control de versiones y así, gestionar de forma uniforme entre los dos integrantes del grupo, el repositorio \textit{Flutter} en el que se irá desarrollando el software correspondiente a la aplicación móvil. Para las pruebas en el dispositivo de \textit{iOS} se utilizará el entorno de \textit{VSCode}.\\\\
-Para el proceso de prueba de funcionalidades de la aplicación móvil se seguirá el siguiente guión:
-	\begin{itemize}
-		\item Primero el desarrollador se asegurará de tener la última versión del repositorio \textit{Flutter}, efectuando un pull de la rama que desea testear.
-		
-		\item A continuación se abre el entorno de desarrollo (VSCode en caso de que se vaya a probar la aplicación en iOS o Android Studio en el caso de un dispositivo Android) y se procede a buildear el código de la app. En caso de encontrar errores se notificarán al encargado de haber realizado esa parte del código.
-		
-		\item Se ejecuta la aplicación libre de errores de compilación en el dispositivo deseado (iOS o Android)
-		
-		\item Posteriormente se realiza la prueba de la nueva funcionalidad implementada, comprobando que no se dan situaciones de error ni resultados inesperados.
-		
-		\item Si las pruebas realizados han sido satisfactorias, se informará al coordinador del grupo de front-end móvil y realizará un merge de esa rama con la rama máster.
-		
-		\item Las versiones utilizadas en los entornos de desarrollo han sido:
+Para el desarrollo del software de la parte del Front-end de la aplicación móvil se va a utilizar el entorno de \textit{Android Studio} haciendo uso de su integración con \textit{git} para facilitar el control de versiones y así, gestionar de forma uniforme entre los dos integrantes del grupo, el repositorio \textit{Flutter} en el que se irá desarrollando el software correspondiente a la aplicación móvil. Para las pruebas en el dispositivo de \textit{iOS} se utilizará el entorno de \textit{VSCode}.\\
+\hfill \break
+Las versiones utilizadas en los entornos de desarrollo han sido:
 		\begin{itemize}
 			\item \textit{Flutter}: v1.12.13 + \textit{hotfix} .9
 			\item \textit{Android SDK}: v29.0.3
@@ -206,7 +195,6 @@ Para el proceso de prueba de funcionalidades de la aplicación móvil se seguir�
 			\item \textit{Angular}: v9.0
 			\item \textit{Node JS}: v12.16.2 LTS
 		\end{itemize}
-	\end{itemize}
 \newpage
 \subsection{Planes}
 
@@ -260,15 +248,26 @@ En la parte referente al back-end, la construcción y despliegue se realizan de 
 
 
 \subsubsection{Plan de aseguramiento de la calidad}
-Para asegurar la calidad, en el caso de la aplicación \textit{Android} se usará la guía de estilo de \textit{Android} \footnote{https://developer.android.com/design}, siguiendo algunos consejos que ahí se comentan, siguiendo los principios de utilización de color principal, siendo este el azul cian, legibilidad y jerarquía, con el objetivo de facilitar la compresión del usuario sobre la interfaz con elementos intuitivos y fácilmente reconocibles. \\
-En la aplicación web, se usará determinados ejemplos de la página de \textit{Angular} \footnote{https://angular.io/} creada por \textit{Google}, la cual permite usar y conocer conceptos importantes a la hora de hacer un código limpio y eficiente.\\
+En la aplicación web, se usará determinados ejemplos de la página de \textit{Angular} \footnote{https://angular.io/} creada por \textit{Google}, la cual permite usar y conocer conceptos importantes a la hora de hacer un código limpio y eficiente (concretamente los apartados 1 y 3).\\
 En ambas guías se sigue el consejo de usar 80 carácteres por línea.
 \hfill \break
 Además, siempre se realizarán las pruebas necesarias antes de realizar un \textit{commit} con la última actualización del proyecto validado. Por lo que la versión que residirá en \textit{GitHub} será la correcta. 
 \hfill \break
 Una vez que la base de datos, aplicación web y móvil, estén terminadas y funcionen con el servidor, se seguirán unas determinadas pautas para comprobar que la aplicación funciona correctamente en todos ellos.  
+Para el proceso de prueba de funcionalidades de la aplicación móvil se seguirá el siguiente guión:
+\begin{itemize}
+	\item Primero el desarrollador se asegurará de tener la última versión del repositorio \textit{Flutter}, efectuando un pull de la rama que desea testear.
+	
+	\item A continuación se abre el entorno de desarrollo (VSCode en caso de que se vaya a probar la aplicación en iOS o Android Studio en el caso de un dispositivo Android) y se procede a buildear el código de la app. En caso de encontrar errores se notificarán al encargado de haber realizado esa parte del código.
+	
+	\item Se ejecuta la aplicación libre de errores de compilación en el dispositivo deseado (iOS o Android)
+	
+	\item Posteriormente se realiza la prueba de la nueva funcionalidad implementada, comprobando que no se dan situaciones de error ni resultados inesperados.
+	
+	\item Si las pruebas realizados han sido satisfactorias, se informará al coordinador del grupo de front-end móvil y realizará un merge de esa rama con la rama máster.
+\end{itemize}
 Unido a todo esto, es imprescindible el uso de ambas aplicaciones por personas ajenas al proyecto, recogiendo opiniones sobre la usabilidad del sistema y detectar posibles errores. 
-
+\newpage
 \subsubsection{Calendario del proyecto y división del trabajo}
 En la primera iteración del proceso de diseño nos centraremos en desarrollar las funcionalidades principales del sistema, mientras que en la segunda iteración se corregirán todos los errores encontrados en la primera, se implementarán las funcionalidades secundarias y se afinara el diseño de la página web y de las aplicaciones móviles para que sean más agradables al usuario. 
 \hfill \break
@@ -419,10 +418,11 @@ La manera de comunicarse entre APIs sigue este patrón:
 	\centering{\includegraphics[scale=0.4]{EsquemaPS.png}}
 \end{figure}
 \subsubsection{Diseño del back-end de la aplicación}
-El diseño del back-end será \textit{REST} para todas las consultas y peticiones relacionadas con la aplicación, excepto la parte de las canciones en streaming. Para ello, se usará la siguiente tecnología CRUD: \textit{Spring Content(Cloud-Native Content Services for Spring)}. \\
+El diseño del back-end será \textit{REST} para todas las consultas y peticiones relacionadas con la aplicación, excepto la parte de las canciones en streaming. Para ello, se usará la tecnología Spring. \\
 \hfill \break
-Esto es debido a que no hay que preocuparse de la implementación del código del controlador del reproductor para que soporte \textit{request} parciales (rangos de bits).\hfill \break
-\textit{Spring Content} nos permite crear un servicio \textit{REST-based mp3}  que soporta streaming. Además, también aporta completamente la funcionalidad \textit{CRUD} (\textit{Create == POST}, \textit{Read == GET} (incluyendo rangos de bits), \textit{Update == PUT}, \textit{Delete == DELETE}) en caso de ser necesaria.
+Además, también aporta completamente la funcionalidad \textit{CRUD} (\textit{Create == POST}, \textit{Read == GET}, \textit{Update == PUT}, \textit{Delete == DELETE}) en caso de ser necesaria.\\
+\hfill \break
+Para el desarrollo de streaming, al final se ha optado por la utilización de Firebase como plataforma de guardado y reproducción de los datos.
 \subsubsection{Base de datos del proyecto}
 Un aspecto esencial que se ha considerado desde el principio ha sido la realización de la base de datos relacional en \textit{PostgreSQL}, siguiendo las siguientes razones:
 \begin{itemize}
@@ -450,33 +450,158 @@ Otro rol sería los responsables de la redacción de las actas, redacción de lo
 El desarrollo del proyecto se realiza a través de la plataforma \textit{GitHub}, de forma que todos los componentes del equipo desarrollan parte del software, y lo ponen en común en dicha plataforma. Se establecieron varias carpetas para cada una de las funcionalidades de la aplicación. \\
 Por último, para la elección de las tecnologías usadas, se tuvo principalmente en cuenta los conocimientos del equipo de desarrollo, ya que cuanta mayor experiencia tuviera menos horas aprendiendo dedicarían. Las tecnologías elegidas fueron: bases de datos \textit{SQL}; lenguaje \textit{Dart} para la aplicación móvil; \textit{Angular}, \textit{CSS}, \textit{JavaScript} para web.
 \subsection{Ejecución y control del proyecto}
-El equipo de \textit{Flutter} ha divido el trabajo hecho hasta ahora en dos partes. Álvaro se ha dedicado a realizar la parte de registro y login de usuarios, mientras que José Félix se ha dedicado a hacer las pantallas de canciones, playlists, álbumes y podcasts. La comunicación dentro del equipo se ha realizado a través de los mensajes privados de \textit{Whatsapp} ya que solo cuenta con 2 integrantes.\\
-\hfill \break
-Para controlar el trabajo realizado se ha utilizado el \textit{Issue Tracker} de \textit{GitHub}, aunque también nos hemos comunicado por \textit{WhatsApp} para tener una comunicación más activa.
-A día de hoy, vamos algo por detrás del plan inicial ya que no esta implementado el reproductor con la base de datos, solo se ha implementado por ahora la parte front-end sin funcionalidad. Esto es debido a que la parte del back-end de las canciones aún no esta con funcionalidad completa.\\
+El equipo de \textit{Flutter} ha divido el trabajo asignado a través del diagrama de Gantt correspondiente a móvil. Cada una de las tareas específicas fueron repartidas a un miembro del equipo respectivamente. La comunicación dentro del equipo se ha realizado a través de los mensajes privados de \textit{Whatsapp} ya que solo cuenta con 2 integrantes.\\
+Para controlar el trabajo realizado se ha utilizado el \textit{Issue Tracker} de \textit{GitHub}, aunque también nos hemos comunicado por \textit{WhatsApp} para tener una comunicación más activa.\\
+\newpage
+Se ha ido implementando cada tarea siempre en consonancia con el back-end, por lo que si se producía un retraso en alguna funcionalidad, también implicaba a nuestro desarollo.\\
+Al final, los requisitos que no se consiguieron implementar fueron por falta de tiempo o demasiada dificultad con la tecnología escogida.\\
 \hfill \break
 No se ha producido ningún cambio en las tecnologías empleadas.
 No se han producido problemas con las integraciones ni versiones del código.
-Por ahora las únicas pruebas realizadas han sido comprobar que el front-end se comunica correctamente con el back-end, realizando las consultas e inserciones en la base correctamente.\\
+Las pruebas realizadas han sido comprobar que el front-end se comunica correctamente con el back-end, realizando las consultas e inserciones en la base de datos correctamente.\\
+Además, antes de la presentación final se le proporcionó la aplicación a diversas personas del entorno familiar para realizar diversas pruebas (debido a la situación actual de movimiento).\\
 \hfill \break
-En la parte del front-end web se ha tenido que cambiar la distribución de trabajo, informándonos simultáneamente la mayor parte del tiempo porque no teníamos experiencia previa y había errores de conexión con el back-end que se sabía solventar; todo esto ha llevado mucho tiempo entre leer documentación y realización de pruebas. También cabe reconocer que si se hubiera puesto en contacto antes con los miembros del back-end se habría solventado mucho antes porque eran errores mínimos.\\
+En la parte del front-end web se ha tenido que cambiar la distribución de trabajo, informándonos simultáneamente la mayor parte del tiempo porque no se tenía experiencia previa y había errores de conexión con el back-end que se sabía solventar; todo esto ha llevado mucho tiempo entre leer documentación y realización de pruebas. También cabe reconocer que si se hubiera puesto en contacto antes con los miembros del back-end se habría solventado mucho antes porque eran errores mínimos.\\
 \hfill \break
 En lo que respecta al back-end, se ha trabajado principalmente por videollamada, trabajando sobre el mismo o diferentes temas, pero cooperando y preguntando dudas en caso de que algún miembro se quede atascado. Previo a esto, han sido necesarias varias horas de formación ya que en la mayoría de los casos no se conocían ni la forma ni el entorno de trabajo. 
 Este factor ha hecho que este trabajo haya supuesto un esfuerzo mayor del que podría haber requerido realmente con respecto a las horas.
-Además, se intentado y se ha conseguido desplegar la aplicación en la plataforma \textit{Heroku} para que, cuando se produzca un commit desde la rama master, se suba automáticamente el proyecto y todos los miembros (también desde el front-end) puedan hacer peticiones a las \textit{URLs} previamente acordadas.
+Además, se ha conseguido desplegar la aplicación en la plataforma \textit{Heroku} para que, cuando se produzca un commit desde la rama master, se suba automáticamente el proyecto y todos los miembros (también desde el front-end) puedan hacer peticiones a las \textit{URLs} previamente acordadas.\\
+\hfill \break
+Cada equipo encargado de una de las tres partes tenía un calendario propio, que tenían que seguir lo máximo posible siempre y cuando se pudiera.  
+Ninguno de los tres grupos acabó dentro de lo establecido por el calendario.\\
+\hfill \break
+Cada grupo ha intentado seguir esa línea marcada, pero debido a que cada grupo era independiente, afrontaron la compensación del tiempo perdido de distintas maneras.\\
+La aplicación móvil sufrió un retraso con respecto al calendario alrededor de 1 ó 2 semanas. Pero se recuperó ese tiempo durante las últimas 2 semanas. Es decir, frente a ese retraso, surgido por problemas de reproducción del streaming. el grupo decidió simplemente hacer jornadas intensivas de desarrollo para alcanzar al calendario.\\
+\hfill \break
+La página web lleva un retraso respecto al calendario de alrededor de un mes. Los problemas principales por los que ha surgido este retraso son coincidencias de asignaturas, junto con entregas de trabajos, además de la formación en la tecnología. Sin embargo, el motivo principal de que este retraso haya sido mucho más elevado ha sido que no ha habido un ritmo constante en su desarrollo.\\
+\hfill \break
+El retraso del back-end se debe a la lenta implementación del modelo de streaming. Se tuvo que desechar la idea de usar una tecnología e implementar otra rápidamente que sí dio éxito.
 \subsection{Cierre del proyecto}
-Los tiempos en las estimaciones iniciales han sido ligeramente más cortos que los utilizados realmente, ya que aunque también estemos utilizando el mismo lenguaje en la asignatura de Arquitectura Software ninguno de los dos lo habíamos utilizado anteriormente.\\
+Como se ha podido ver, la cantidad de horas dedicadas a cada parte ha sido superior a las estimadas, excepto en la parte web, debido fundamentalmente al retraso en el calendario que tenían (lo que hizo que no se pudiera trabajar tanto en ese aspecto). También puede ser debido a una ligera sobreestimación del coste de horas.\\
 \hfill \break
-Las lecciones aprendidas más importantes han sido tanto, tanto aprender como utilizar \textit{Flutter} y programar en \textit{Dart}. Además, hemos adquirido conocimientos sobre cómo funcionan las cabeceras \textit{HTTP} para poder hacer peticiones al back.\\
-Como se ha indicado anteriormente Álvaro se ha dedicado a hacer la parte de registro y login de usuarios, llevándole unas 16 horas, y José Félix ha hecho las pantallas de canciones, playlists, álbumes y podcast, con un total de 12 horas.\\
+Otro punto en el que hay diferencia de horas generalizadas en cada equipo es en el aprendizaje de nuevas tecnologías. Esto es debido a que se estimó que los integrantes tenían un conocimiento muy básico de las herramientas a utilizar y de esa manera se tendría una estimación máxima. Como muchos de los integrantes tenían algún conocimiento previo con las herramientas que utilizaban este coste se redujo.  \\
+\hfill \break
+Con respecto a la diferencia en esfuerzo, al front-end le ha sido producida por lo recién nombrado y al hecho de que, al no cumplirse el calendario y llevando un gran retraso, como se mencionó en apartados previos, el número de horas es superior al supuesto ya que se dedicó mucho trabajo al final del mismo.\\
+\hfill \break
+En back-end, las estimaciones propuestas fueron bastante realistas, llegando a ser superior el coste para la implementación mayor que el estimado, aunque el coste en familiarización con las distintas tecnologías fue reducido.\\
+\hfill \break 
+Las estimaciones para la aplicación móvil no sufrieron grandes cambios. Como ya se ha dicho se hizo una estimación alta para el diseño de la interfaz, mientras que el coste de su implementación iba a ser relativamente bajo. \\
+Pero debido a que se hizo una aplicación nativa el coste de su producción se incrementó. La diferencia entre el coste estimado y el real es muy bajo, por lo que la estimación que se hizo fue bastante ajustada a la realidad. \\
+\hfill \break
+También se hizo una estimación de las pruebas que no se pudo cumplir del todo, ya que debido a los retrasos producidos en la aparte web y ligeramente en Android, hizo que no se puedan realizar todas las pruebas esperadas. Con lo cual la cantidad de esfuerzo dedicado a las pruebas es menor.\\
+Como ya se ha dicho anteriormente, había gente que no controlaba demasiado las tecnologías utilizadas, así que el hecho de participar en este proyecto ha hecho que todos los integrantes puedan aprender algo más acerca de distintas tecnologías. \\
+\hfill \break
+En primer lugar, GitHub. Muy pocos de los integrantes habían utilizado esta clase de herramienta, lo que ha permitido que este proyecto haya sido útil para aprender esta herramienta ya que, de no haberla utilizado, hubiera sido muy complicado la división del trabajo y la unión de todo lo realizado por cada integrante. El hecho de haber aprendido a utilizar esta herramienta es útil ya que, en el futuro, al intentar hacer cualquier proyecto de tamaño medio-grande sería necesaria esta herramienta, por lo que esa experiencia ya se ha obtenido.\\
+\hfill \break
+Ciertas personas no habían aprendido ciertas tecnologías del back-end o front-end, pero por distintos motivos han participado en ese equipo, lo que ha hecho que hayan tenido que aprender las tecnologías correspondientes desde prácticamente el principio. Esto hace que si en algún momento tienen que participar en algún proyecto en el que necesiten eso ya tendrán un conocimiento lo suficientemente alto de esa tecnología como para desenvolverse relativamente bien. \\
+\hfill \break
+Puesto que al final se decidió hacer la versión para Flutter nativa, la gente que no hubiera estado en contacto con esta tecnología también pudo aprender a utilizar este entorno para la creación de aplicaciones móviles.\\
+\hfill \break
+Las horas trabajadas se han contabilizado en el Anexo II del proyecto.
 \newpage
-En el front-end web se tiene en cuenta un pequeño retraso enfocado en el diseño de algunos módulos de la web, pero en estas semanas se espera solventar y ponerse al día con el calendario establecido al principio. De igual manera, se supone que las variaciones serían mínimas. Junto a todo esto, el proyecto ha supuesto bastante esfuerzo al principio, y muchas horas de documentación y tutoriales porque no se poseía experiencia suficiente con Angular.\\
+\section{Conclusiones}
+\subsection*{Alejandro Piedrafita}
+En esta asignatura, se ha realizado un proyecto software el cual ha supuesto planear y más tarde llevar a cabo todas y cada una de las fases que implica un proyecto de este estilo. Durante la realización de este proyecto y, sobre todo, con el transcurso de los días, se han debido de afrontar diversos retos y complicaciones, tanto planeados como imprevistos. A pesar de ello, se ha conseguido finalmente sacar adelante dicho proyecto y poder presentar una aplicación de streaming de música funcional para ordenador y sobre todo para móvil.\\
 \hfill \break
-Por último, en la parte del back-end, se ha completado la parte del registro e inicio de sesión de los usuarios, se ha conseguido desplegar automáticamente y poder estar accesible para todos los miembros el proyecto, y se ha investigado y se está probando el almacenamiento y la reproducción de canciones, así como el almacenamiento de imágenes. La correspondencia con el calendario no es exacta, ya que se ha priorizado el despliegue para una mayor comodidad de todos los miembros del equipo pero no se ha completado aún (aunque está en proceso) como se había definido previamente el almacenamiento y la reproducción de las canciones.
+La primera de las complicaciones ha sido familiarizarse con el entorno de trabajo, las configuraciones y demás aspectos específicos del entorno. Tanto a nivel de grupo como a nivel personal, esto supuso un gran periodo de adaptación. Personalmente me implicó más tiempo del planeado el familiarizarme con la forma de trabajar, crear y gestionar proyectos, pero es algo que debe hacerse para poder posteriormente trabajar de forma autónoma y avanzar en el proyecto.\\
+\hfill \break
+Otro de los aspectos clave que se han podido observar a lo largo del proyecto es la definición de roles inicial, así como las tareas asignadas a cada individuo. Este es un aspecto fundamental, el cual debe quedar claro desde un inicio y respetarse durante todo el proyecto. Cada individuo debe conocer sus virtudes y sus debilidades y ser realista a la hora de definir dichos roles y tareas, pues de lo contrario esto supone un coste extra de trabajo y estrés para el resto del grupo teniendo que asumir dichas tareas si se quiere sacar el proyecto adelante.\\
+\hfill \break
+Un aspecto muy importante a destacar, definido en la asignatura pero no siempre llevado a la práctica, es el control de esfuerzos. De esta forma se puede llevar al día qué se ha realizado y qué queda aún por realizar, tener en cuenta los imprevistos y pedir ayuda en caso de ser necesitada. Es importante seguir un orden lógico y únicamente dar por terminadas las tareas cuando han sido completadas y probadas, pues de lo contrario perjudica tanto al propio grupo como al resto de grupos sin poder continuar y generando dudas. Para complementar este aspecto, ha resultado de gran utilidad el control de versiones y líneas de código de cada miembro, permitiendo así identificar quién ha añadido cada línea, en qué momento y en qué archivo. Esto permite identificar de forma mucho más rápida y clara los nuevos cambios (verde, amarillo y rojo) pudiendo así comprender el código de los compañeros en cada fecha.\\
+\hfill \break
+Sí cabe destacar como punto fuerte y muy positivo la comunicación entre grupos, coordinándose e informando de sus avances y sus limitaciones. Muchas de las pruebas se realizaron en conjunto, cooperando varios grupos al mismo tiempo. Se debe destacar la predisposición a ayudar de los miembros de la aplicación móvil, tanto para las pruebas conjuntas como incluso para ayudar en aspectos de código y configuración a nuestro grupo (back-end).
+\subsection*{Sergio Torres}
+Las conclusiones que puedo sacar de este proyecto son, principalmente, lo difícil que puede llegar a ser tener un producto final de calidad sin una buena planificación y lo importante y complicado que es tener una idea realista de lo que quieres que tenga la aplicación final desde un punto inicial del proyecto.\\
+\hfill \break
+La planificación en mi opinión podría haber sido mejor, esto es porque desde el inicio se desconocía bastante el coste de lo que nos iba a suponer la implementación de todos los requisitos y funciones que queríamos que tuviera nuestra aplicación. A esto le sumo una planificación demasiado flexible con las tareas que nos asignábamos. Creo que es bueno que tenga un punto de flexibilidad, pero ya hemos visto que si se excede ese punto da lugar a una organización más complicada.\\
+\hfill \break
+En cuanto a los requisitos funcionales, se ha comprobado que son fáciles de definir pero difíciles de implementar, sobre todo si no se tiene un conocimiento suficiente ni experiencia previa sobre las herramientas de desarrollo utilizadas (Angular, en mi caso) y con los lenguajes de programación utilizados (TypeScript, principalmente). Es por ello por lo que el inicio del proyecto se hace duro en estas ocasiones.\\
+\hfill \break
+Finalmente, estoy contento con lo aprendido ya que, además de haber cogido soltura en el manejo de estas nuevas herramientas de desarrollo web y sus lenguajes de programación, haciendo un proyecto de esta magnitud es cuando te das cuenta de la importancia de tener una buena planificación y unos requisitos funcionales que puedas llevar a la práctica a tiempo.\\
+\hfill \break
+Considero que es necesario tener en cuenta los errores, admitirlos y analizarlos como se ha hecho en este apartado de conclusiones para poder mejorar en el futuro, ya que todo se simplifica a eso.
+\newpage
+\subsection*{Víctor Pérez}
+La principal conclusión que he sacado tras la realización de este trabajo es que, durante un proyecto largo viene bien dividir el trabajo en tareas más pequeñas y que, aunque a veces algunas de esas tareas se alarguen más de lo que se esperaba hay que saber reorganizar el tiempo sobre la marcha. \\
+\hfill \break
+Siguiendo con el punto anterior se podría haber mejorado un poco la parte concerniente al seguimiento del calendario, por mi parte sobre todo me costó bastante más de lo habitual la parte del streaming de canciones. Quizás por empeñarme en realizarlo de la forma en la que se había planeado en un principio en vez de abrirme a cambiar la manera de hacerlo antes, lo que, visto a posteriori, habría ahorrado bastante tiempo y ajustado el calendario, ya que bastantes funcionalidades y pruebas dependían de ello.\\
+\hfill \break
+Por otra parte, si que es verdad que ha sido de los pocos proyectos de tanta extensión que hemos realizado en la carrera, y la verdad que seguir la metodología de trabajo que hemos decidido, tanto en división de tareas como en el control de versiones etc, nos ha ayudado a no tener que preocuparnos por demasiados conflictos en los merges de github y han facilitado el trabajo en equipo.\\
+\hfill \break
+Respecto a los conocimientos aprendidos, en esta práctica he adquirido bastantes conocimientos sobre el tema de aplicaciones web y rest API ya que, aunque el lenguaje de java que se ha usado en el back era conocido para mí, nunca lo había usado en estos términos, además me gustaría incluir en esta parte también la metodología de trabajo mencionada en el párrafo anterior ya que considero que me puede ser de gran utilidad en un futuro.
+\subsection*{Álvaro Santamaría}
+En esta asignatura hemos afrontado y superado el reto de desarrollar un proyecto de software de una manera muy similar a cómo lo haremos en el futuro en una empresa, trabajando con tecnologías nuevas y desconocidas hasta ahora y enfrentándonos a los problemas de una forma más autónoma e independiente con respecto a proyectos y trabajos grupales previos de otras asignaturas en la titulación.\\
+\hfill \break
+En mi caso particular, lo más importante que he aprendido es que el resultado final depende de una correcta y continua organización. Mi apreciación es que nuestro grupo no estuvo lo suficientemente organizado como para cumplir los plazos que se habían propuesto en un inicio y que, viendo como el tiempo se nos echaba encima, en lugar de pararnos y reestructurar todo, se optó por realizar sesiones exhaustivas de trabajo de forma independiente para poder llegar a tener una aplicación mínimamente funcional, lo cual supuso que se aumentaran considerablemente las horas de trabajado que en un principio habían sido establecidas.\\
+\hfill \break
+Además, creo que también ha faltado coordinación entre los diferentes equipos de desarrollo ya que en varias situaciones se habrían subsanado muchos errores que surgían si hubiésemos preguntado al resto de equipos en lugar de intentarlos resolver de forma autónoma.\\
+\hfill \break
+En mi opinión, nadie ejerció de líder de tal forma que nos coordinásemos todos los desarrolladores del proyecto en lugar de cada equipo fuese por libre. También echo en falta un mayor número de sesiones de control para poder saber cuál era la situación en la que se encontraban el resto de equipos de trabajo.\\
+\hfill \break
+Cabe destacar que no todo ha sido negativo, puesto que hemos sido capaces de aprender un nuevo lenguaje de programación (en mi caso el lenguaje Dart) y ser capaces de desarrollar una aplicación móvil totalmente funcional en este cuatrimestre cumpliendo con la mayoría de los requisitos prestablecidos, pese a todos los inconvenientes y problemas previamente citados.\\
+\hfill \break
+Por último destacar también la buena comunicación que hubo en mi equipo de desarrollo de frontend móvil formado por José Félix y por mí, ya que en todo momento nos hemos ayudado mutuamente para conseguir los objetivos.
+\subsection*{José Félix Yagüe}
+En esta asignatura he aprendido la importancia de la planificación en un proyecto de gran escala, y la importancia de utilizarla correctamente y seguirla día a día, ya que es una herramienta muy útil de la que no era realmente consciente hasta el momento.\\
+\hfill \break
+Al estar tanta gente trabajando en un mismo proyecto utilizarla nos ha hecho la vida bastante más fácil a la hora de hacer funcionar todo correctamente.
+También he visto la importancia de trabajar en equipo porque al ser un trabajo tan grande del que dependes de lo que ha desarrollado otra persona para poder trabajar en tu parte. Te das cuenta de lo que importa trabajar con otras personas para poder hacer funcionar trabajos más complejos que los que habíamos hecho hasta ahora.\\
+\hfill \break
+Si tuviese que hacer algún cambio respecto a lo que hemos hecho sería sobretodo seguir mejor la planificación que se había desarrollado al principio, ya que hemos tenidos retrasos acumulados desde casí el inicio del proyecto. Estos retrasos son más grandes en trabajos de este tipo donde muchas veces el trabajo de unos depende de otros.\\
+\hfill \break
+Dicho esto creo que la planificación que habiamos hecho estaba bien planteada, por lo que la haría de la misma forma si tuviesemos que hacer otro proyecto así.
+\newpage
+Por último, recalcar que a pesar de los retrasos, que ha sido el único aspecto negativo, me ha parecido una buena experiencia que podemos usar para aprender de los errores y no volver a caer en ellos en proyectos futuros de gran escala.
+\subsection*{Fernando Navarro}
+Las conclusiones que saco de este proyecto es que tener una buena planificación es la gran parte del proyecto porque aunque dispongas de gente que dedique muchas horas y mucho esfuerzo si no hay una buena planificación prácticamente no sirve de nada. En nuestro proyecto hemos sido un poco laxos y permisivos en cuanto a ir modificando la planificación sobre la marcha y dejar tareas sin completar que se acumulaban semanas más tarde.\\
+\hfill \break
+Por mi parte creo que el principal error fue no calcular bien el tiempo que me iba a costar aprender a usar Angular y los lenguajes que utilizaba. Respecto al proyecto en general el error más grave fue elegir mal el almacenamiento de las canciones y los podcasts que fue lo que retrasó la mayor parte del proyecto. Por eso si ahora volviésemos a empezar el proyecto empezaríamos cambiando esas elecciones además de hacer una planificación más estricta a la que todo el mundo estuviese sujeto y seguro que se habrían podido implementar todos los requisitos funcionales, teniendo un producto final mucho mejor.\\
+\hfill \break
+A pesar de todo esto creo que he aprendido bastante de esta asignatura porque he hecho mucho autoaprendizaje de cosas que no había hecho hasta ahora y también he aprendido de lo que hemos hecho mal. Creo que es difícil que algo salga a la perfección la primera vez que lo haces y era el caso de este primer proyecto.
+\subsection*{Alejandro Ruiz}
+De este proyecto, y sobretodo del resultado obtenido (producto resultante), se puede concluir que un buen producto empieza por una buena gestión. Esta conclusión se ve clara al darnos cuenta de que nuestra mejorable gestión ha dado lugar a un producto bueno, pero no excelente. \\
+\hfill \break
+Centrándonos en la gestión como tal, si tuviésemos que iniciar un nuevo proyecto, aplicando los conocimientos adquiridos de esta experiencia, lo primero que haría sería aclarar desde un comienzo los papeles de cada trabajador y establecer una jerarquía clara (lo cual si hicimos), y establecería unos procesos de control y medidas de avance del proyecto lo más concretos posibles (lo cual no hicimos bien), para intentar seguir el calendario paulatinamente. \\
+\hfill \break
+En general, aplicaría una metodología de procesos mucho más metódica, ya que la que hemos llevado acabo ha dejado algunas cosas sin terminar. 
+Y diría que uno de los mayores problemas, ha sido la indulgencia generalizada, en la que pese a ir retrasados, se iba perdonando y diciendo el “ya lo recuperarás”. \\
+En un ambiente laboral, esto sería sin duda lo primero que se solventaría al jugarse el sueldo, ya que aquí al no haber dicho riesgo, nadie sentía ese nivel de responsabilidad. \\
+\hfill \break
+Sin embargo, resulta interesante realizar un proyecto de estas características debido a su aproximación con un futuro laboral, ya que en cualquier trabajo se tiene que coordinar en grupo. \\
+En este sentido ha sido de gran utilidad, y además en el uso de herramientas comerciales que puede utilizar cualquier empresa destinada al desarrollo software. \\
+\hfill \break
+Además, el conocimiento sobre nuevas tecnologías y su reflejo en una aplicación real han sido otros factores positivos del trabajo.
 \newpage
 \section*{Anexo I. Actas de las reuniones}
+\includepdf[pages=1-5]{actas.pdf}
+\newpage
 \section*{Anexo II. Esfuerzos realizados}
+\begin{table}[H]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\multicolumn{1}{|l|}{\textbf{Miembro del equipo}} &
+			\multicolumn{1}{l|}{\textbf{Horas dedicadas}} &
+			\textbf{Tarea} \\ \hline
+			\textbf{Alejandro Ruiz} &
+			120 h &
+			\begin{tabular}[c]{@{}c@{}}Responsable del equipo\\ Coordinador de la memoria\\ Desarollo del back-end\end{tabular} \\ \hline
+			\textbf{Álvaro Santamaría}    & 130 h & Desarrollo del front-end     \\ \hline
+			\textbf{José Félix Yagüe}     & 120 h & Desarrollo del front-end     \\ \hline
+			\textbf{Alejandro Piedrafita} & 145 h & Desarrollo del back-end      \\ \hline
+			\textbf{Víctor Pérez}         & 105 h & Desarrollo del back-end      \\ \hline
+			\textbf{Sergio Torres}        & 135 h & Desarollo del front-end web  \\ \hline
+			\textbf{Fernando Navarro}     & 100 h & Desarrollo del front-end web \\ \hline
+			\textbf{Total}                & 855 h & \multicolumn{1}{l|}{}       \\ \hline
+		\end{tabular}%
+	}
+\end{table}
+\newpage
 \section*{Anexo III. Propuesta técnica y económica}
+\begin{figure}[H]
+	\centering{\includegraphics[scale=0.35]{EstimacionCoste.png}}
+\end{figure}
 \end{document}
 
 
